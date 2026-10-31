@@ -45,29 +45,6 @@ VulChain combines three parts:
 | Dataset→Model edges | 253,111 |
 | SHA-256 | `25d669bdef51714de43369ceb6e5bfd22a8a170d616b894f569d4661f4da4c97` |
 
-It is built from the October 2, 2026 HuggingGraph v3 release with one
-evidence filter, applied to relationship 2 (Dataset→Model). A training-data
-declaration is kept only if it resolves to exactly one Dataset in the crawled
-inventory. That drops 108,953 of the release's 362,064 declared references:
-
-| Dropped references | Count |
-|---|---:|
-| Ambiguous bare names | 55,115 |
-| Owner/repository IDs absent from the snapshot | 39,749 |
-| Unmatched bare names | 13,558 |
-| Malformed or placeholder strings, such as `-` | 531 |
-
-Except for the malformed strings, the dropped references are unresolved, not
-shown to be false.
-
-The other 16 families are exactly the released ones. For reference, the
-unfiltered HuggingGraph v3 release (`HuggingGraph_v3.dot`, 7,775,872 edges and
-3,137,207 nodes) is not part of this repository. It remains available from its
-own release, and `experiments/RQ1/rq1_table_01.py --view released` reproduces
-its counts.
-
-See [graph/README.md](graph/README.md) for download, verification and rebuilding.
-
 **Entity types (8):** Model, Dataset, Space, GitHub repository, Library, License, Task, Agent framework.
 
 **Relationship families (17):**
