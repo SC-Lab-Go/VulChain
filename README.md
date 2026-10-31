@@ -130,8 +130,6 @@ Release [`v2026.10.30`](https://github.com/SC-Lab-Go/VulChain/releases/tag/v2026
 | Asset | Place at | SHA-256 |
 |---|---|---|
 | [`VulChain.dot`](https://github.com/SC-Lab-Go/VulChain/releases/download/v2026.10.30/VulChain.dot) | `graph/VulChain.dot` | `25d669bdef51714de43369ceb6e5bfd22a8a170d616b894f569d4661f4da4c97` |
-| [`graph_model_model_first_200k.csv.completed.txt`](https://github.com/SC-Lab-Go/VulChain/releases/download/v2026.10.30/graph_model_model_first_200k.csv.completed.txt) | `experiments/production/graph_server_rq1/hub_agreement/historical_first200k/reference/` | `de0df81d8d206de89f6685daf59fdf566fdb1a776323ceb3a8f4472c3e34da26` |
-| [`table2_stage_records.csv`](https://github.com/SC-Lab-Go/VulChain/releases/download/v2026.10.30/table2_stage_records.csv) | `data/table2_baseline/` | `5789ad230dec925a4aae6e3eeffeb5ec979c955cc27bd7e90eddfe21952e9300` |
 
 ```bash
 BASE=https://github.com/SC-Lab-Go/VulChain/releases/download/v2026.10.30
