@@ -39,11 +39,4 @@ Each edge is one line:
   Attribute edges point from the artifact to the attribute.
 - The file contains edges only. Every node is an endpoint of at least one edge.
 
-## Loading
 
-NetworkX and pydot need a lot of memory for the full graph. Stream the file
-instead:
-
-```bash
-python relationships/examples/show_relationship.py graph/VulChain.dot --family 12 --limit 5
-```
