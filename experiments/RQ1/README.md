@@ -1,33 +1,3 @@
-# RQ1: AI supply-chain graph reconstruction quality
-
-**Objective.** RQ1 measures three things:
-
-- the graph's scale and composition;
-- how reliable its lineage labels are against an external reference;
-- the cost of offline construction.
-
-| Artifact | Label | Entry point | Status |
-|---|---|---|---|
-| Table: VulChain statistics | `tab:master_table` | `rq1_table_01.py` | PASS (44/44) |
-| Table: lineage edges and Hub model-tree agreement | `tab:hub_agreement` | `rq1_table_02.py` | PASS (34/34) |
-| Figure: DOT assembly scaling | `fig:rq1` | `rq1_figure_01.py` | PASS (71/71; 72/72 with `--rebuild-dot`) |
-
-| Label | Code | Inputs | Calc. reproduced | Values verified | Public | Restricted |
-|---|---|---|---|---|---|---|
-| `tab:master_table` | yes | yes (release archive) | yes | 44/44 per view | yes | no |
-| `tab:hub_agreement` | yes (original evaluator and audit) | yes | yes | 34/34 | yes | no |
-| `fig:rq1` | yes (original summarizer and plotting script) | yes (raw run records) | yes, except that timings are not re-measured | 71/71 | yes | no |
-
-**Two graph versions.**
-
-| Graph | Edges | SHA-256 | Used by |
-|---|---:|---|---|
-| `VulChain.dot` (canonical, analytical view) | 7,666,919 | `25d669bd…` | `tab:master_table` (default view) |
-| `HuggingGraph_v3.dot` (full release) | 7,775,872 | `348d92cd…` | `fig:rq1` (all benchmark runs); `tab:master_table --view released` |
-
-The Model→Model family (966,035 edges), which `tab:hub_agreement` evaluates,
-is identical in both graphs.
-
 **Inputs.**
 
 - `--release-dir`: the extracted reproducibility archive of release
@@ -201,15 +171,6 @@ Timings are a hardware benchmark. They are reproduced from the records and
 are not re-measured. To re-measure, use the original driver
 (`figure_rq1/benchmark/scripts/run_scaling_local.sh`) on an idle host; the
 results will differ by host.
-
-**Manuscript notes.**
-
-- The RQ1 text says throughput "remains stable near 144K edges/s". The recorded
-  means are 145.8K–146.3K, and the mean of the 100% runs is 145,811 edges/s
-  (about 146K).
-- The caption calls the benchmarked graph the "released graph". Consider naming
-  the HuggingGraph v3 release explicitly, now that VulChain refers to the
-  analytical graph.
 
 ## Limitations
 
