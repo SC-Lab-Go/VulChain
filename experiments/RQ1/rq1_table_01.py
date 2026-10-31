@@ -7,14 +7,6 @@ Purpose: "VulChain statistics (October 2, 2026)" - unique edges and endpoint
          nodes for the 17 relationship families, and the union node count by
          entity type.
 
-The manuscript reports the inventory-resolved analytical view (default,
---view analytical): the released per-family edge files with relationship 2
-(Dataset->Model) replaced by evidence/top_level/dataset_model_edges_validated.csv,
-which keeps only training-data declarations that resolve to exactly one
-Dataset in the crawled inventory. This view is graph/VulChain.dot.
---view released reproduces the counts of the full October 2 HuggingGraph v3
-release (HuggingGraph_v3.dot) from the same code.
-
 Inputs:  <release>/edges/csv/01..17_*.csv
          <release>/evidence/top_level/dataset_model_edges_validated.csv (analytical view)
 Output:  outputs/RQ1/rq1_table_01_<view>.csv, outputs/RQ1/rq1_table_01_<view>_verification.md
