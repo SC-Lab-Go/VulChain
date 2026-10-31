@@ -23,7 +23,7 @@ failure.
 VulChain combines three parts:
 
 1. **Heterogeneous graph construction.** Eight entity types and 17 relationship
-   families, collected from Hugging Face snapshots taken between August 28 and
+   families, collected from Hugging Face snapshots taken through
    October 2, 2026.
 2. **Provenance-qualified lineage selection.** Four nested evidence-admission
    policies (Strict ⊂ Intermediate ⊂ Declared ⊂ Extended).
