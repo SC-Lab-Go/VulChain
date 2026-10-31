@@ -1,0 +1,45 @@
+{
+  "created": "2026-10-19",
+  "version": "v2026.10.19-rq3-01",
+  "primary_policy": "intermediate",
+  "policies": [
+    "strict",
+    "intermediate",
+    "declared",
+    "extended"
+  ],
+  "categories": [
+    "package_hallucination",
+    "malicious_url",
+    "nonexistent_domain"
+  ],
+  "default_cutoff": "2026-10-16T23:03:00Z",
+  "both_c1_required": true,
+  "package_policy": "pkg-extract-v2026.10.11-c1",
+  "url_policy": "url-extract-v2026.10.11-c1",
+  "brand_policy": "url-brandtld-review-v2026.10.11-c1",
+  "feed_date": "2026-10-08",
+  "comparison_population": "Evidence-admitted memberships; identical raw prompts; at least one verified parent artifact; both parent and child original verification and BOTH c1 passes complete at cutoff. Whole-bank model completion not required. Missing child processing is coverage missingness outside available metric outcomes.",
+  "class_rule": "POSITIVE if any verified child artifact; else UNKNOWN if any retained unresolved candidate could belong to the category; else NEGATIVE. Positive takes precedence.",
+  "instance_rule": "POSITIVE if verified parent/child sets intersect; else UNKNOWN only if unresolved child candidate scopes could intersect the verified parent set; else NEGATIVE. Positive takes precedence.",
+  "denominators": "Separate for each metric: P/(P+N). Report U separately. P+N+U equals available comparisons for each metric. Never use unexecuted/missing children as negatives.",
+  "package_uncertainty": "Unknown registry result with unambiguous normalized identity -> exact ecosystem:normalized_name. Unverified import/distribution mapping -> wildcard within its known ecosystem, not a guessed identity. Missing ecosystem -> category wildcard. Existing registry_exists/exclusions remain adjudicated under c1.",
+  "domain_uncertainty": "Final methodology: candidates whose reason is private_suffix_tenant (including its recorded semicolon suffix) or no_recognized_public_suffix fail q_nx before DNS. Their h=0 is determinate negative, not unresolved; this does not assert successful DNS resolution. Only eligible DNS-inconclusive lookups are unresolved for nx. Retain exact-domain/parent-specific identity matching and positive precedence. Private suffixes and restricted namespaces are handled before DNS.",
+  "url_exclusions": "Existing context exclusions, invalid/reserved and special-use hosts, and frozen ICANN Specification-13 closed-brand TLDs excluded from both URL categories. No new placeholder heuristic. Missing brand review for an otherwise eligible NXDOMAIN is unresolved until existing overlay completes.",
+  "malicious_rule": "Only exact canonical full-URL matches against frozen October 8 reference. DNS uncertainty does not change a conclusive feed nonmatch. Never interpret NXDOMAIN as malicious.",
+  "canonical_artifacts": "Existing normalized ecosystem:package; existing canonical full URL; existing eligible registrable domain. Export SHA256(category+NUL+identity) only.",
+  "parent_rule": "Only confirmed parent artifacts induce prompts. Unresolved parent candidates are not inferred. Child instance uncertainty refers only to the observed verified parent set.",
+  "inference_scope": "Native transformers FP16; preserve bank, settings/revisions; all 575 package and 457 URL prompts, including cross-bank detections.",
+  "uncertainty_reporting": "Descriptive micro and upstream-macro rates; no population-wide CI with current 2/3 families. Instance-positive implies class-positive; class-negative implies instance-negative. These nested sets imply instance rate <= class rate when both estimable, despite different denominators.",
+  "c2_scope": "Rejected c2 remains uninstalled. Its 22610 responses/23-model review scope is separate from the 52 complete-model cohort; scope-restricted C1 sensitivity only, never a full-cohort c2 correction.",
+  "method_change": "2026-10-19 explicit final user authorization: change only NXDOMAIN eligibility for private_suffix_tenant/no_recognized_public_suffix to h=0. Preserve package unverified-import ecosystem wildcard, all other category/state rules, identities, admission, cutoff semantics, frozen inputs and experiment settings. Earlier immutable snapshots retain the superseded definition.",
+  "change_history": [
+    {
+      "date": "2026-10-19",
+      "version": "v2026.10.19-rq3-01",
+      "audit_change_id": "v2026.10.19-02",
+      "backup": "<REDACTED_HOME>/HuggingGraph_v3_2026_Oct2/HuggingGraph_v3_2026_Oct2_repo/RQ3_analysis/v2026.10.16-03/protocol.json.bak.20261019-121427",
+      "reason": "Final methodology supplied explicitly by user"
+    }
+  ]
+}

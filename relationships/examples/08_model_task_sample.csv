@@ -1,0 +1,6 @@
+source,edge_type,target
+model::0-hero/led-large-legal-summary,performs_task,task::summarization
+model::0-ma/beit-geometric-shapes-base,performs_task,task::image-classification
+model::0-ma/efficientnet-b2-geometric-shapes,performs_task,task::image-classification
+model::0-ma/focalnet-geometric-shapes-tiny,performs_task,task::image-classification
+model::0-ma/mit-b0-geometric-shapes,performs_task,task::image-classification

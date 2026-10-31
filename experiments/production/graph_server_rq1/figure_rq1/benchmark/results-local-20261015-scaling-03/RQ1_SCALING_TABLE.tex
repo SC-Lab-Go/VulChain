@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Controlled offline DOT assembly scalability (three sequential runs per size).}
+\label{tab:rq1-scaling}
+\begin{tabular}{r r r r r}
+\toprule
+Input & Edges & Wall time (s) & Peak RSS (GiB) & Throughput (edges/s) \\
+\midrule
+25\% & 1,943,967 & 13.30 $\pm$ 0.16 & 0.207 $\pm$ 0.000 & 146,213 $\pm$ 1,715 \\
+50\% & 3,887,935 & 26.58 $\pm$ 0.23 & 0.326 $\pm$ 0.000 & 146,280 $\pm$ 1,239 \\
+100\% & 7,775,872 & 53.34 $\pm$ 0.96 & 0.447 $\pm$ 0.000 & 145,811 $\pm$ 2,620 \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.98\columnwidth}\footnotesize Values are mean $\pm$ sample standard deviation. Inputs preserve all 17 relationship families. Network acquisition is excluded; the archived builder is single-process and CPU-bound.\end{minipage}
+\end{table}

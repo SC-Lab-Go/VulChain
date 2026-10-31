@@ -1,0 +1,6 @@
+source,edge_type,target
+dataset::0xKitkat/BiochemForge,uses_library,library::parquet
+dataset::0xiviel/poc-openvino-ir-shape-overflow,uses_library,library::openvino
+dataset::0xiviel/poc-openvino-onnx-path-traversal,uses_library,library::onnx
+dataset::0xiviel/poc-openvino-onnx-path-traversal,uses_library,library::openvino
+dataset::0xiviel/poc-openvino-onnx-uint64-overflow,uses_library,library::onnx

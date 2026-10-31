@@ -1,0 +1,286 @@
+{
+  "created": "2026-10-30",
+  "version": "v2026.10.30-02",
+  "source": "Production analysis repository (HuggingGraph_v3_2026_Oct2_repo) on the Security Server; paths below are relative to its root.",
+  "redaction_policy": "Only machine-specific literals are replaced by placeholders: the Security Server hostname, the account home directory, the TACC scratch directory and the account name. No code, definition, constant or control flow is changed. Reversing the placeholders with the private values reproduces original_sha256 exactly (experiments/production/verify_sources.py --private-values).",
+  "placeholders": [
+    "<REDACTED_TACC_SCRATCH>",
+    "<REDACTED_HOME>",
+    "<REDACTED_SECURITY_SERVER_HOST>",
+    "<REDACTED_USER>"
+  ],
+  "files": [
+    {
+      "path": "RQ2_analysis/v2026.10.27-01/unified_analysis.py",
+      "role": "Ledger capture, canonical comparison records, cohort, eligibility, aggregation, clustered bootstrap",
+      "original_sha256": "4b3f7b2d3a3fb5bddf49a17496c0fe52fce6c2789843aea776214be8bc63823a",
+      "published_sha256": "96da4c198617949c51ba09721b654def3a4b24d8d0255ef5c6451fd3e0c7d8a5",
+      "bytes": 40477,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 3,
+          "lines": [
+            423,
+            449,
+            462
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ2_analysis/v2026.10.27-01/unified_exports.py",
+      "role": "RQ2-RQ5 macro/table generation and RQ5 graph analysis",
+      "original_sha256": "35eff65a28cb9ebb1dc0edb0126c0b7f61cac6be0a7f531c45d5b38530cbde38",
+      "published_sha256": "f3126168a49e2fb0a62657ead12c6821612aeef7a19aa85c05638452f9a09904",
+      "bytes": 105819,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 3,
+          "lines": [
+            303,
+            304,
+            305
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/run_rq3.py",
+      "role": "Frozen response engine: verified artifacts, three-state class/instance outcomes, independent SQL check",
+      "original_sha256": "293974f617c40bf7594da702c23805b45408f3c6960405869b744415332d6ee8",
+      "published_sha256": "0716937d53a86b7f0285cede41e58f85344ce83b82d6b6b058a332458c21aa6a",
+      "bytes": 52642,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_SECURITY_SERVER_HOST>",
+          "occurrences": 1,
+          "lines": [
+            412
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/protocol.json",
+      "role": "Frozen RQ3 definitions (class/instance rules, denominators, exclusions)",
+      "original_sha256": "bdf0118c84d6d4bc1d7d4df2e4c7707d5aaa47e34963586f2c2cbeee2a667a37",
+      "published_sha256": "876514e6e071d27743ea2032bb56ae22fab2afc931b46433ae52580f3f7720be",
+      "bytes": 4588,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/input_pin.json",
+      "role": "Input pins (ledger, frozen snapshot, c1 view schema hashes)",
+      "original_sha256": "3be6341434679e06a083da6d0e66912e7d07dffc599569616cf25b6c54c31a52",
+      "published_sha256": "c0c4388a2397288991cc3e5b54342d1b3344a67d8b23d9cb81480ca3a49cfa46",
+      "bytes": 1912,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 2,
+          "lines": [
+            2,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/FREEZE.json",
+      "role": "Definition lock checked by unified_analysis.py",
+      "original_sha256": "cf9e8ec6b12233e5b20ba768e4b20668bad5301f65c993f014893ea0c4be1e9d",
+      "published_sha256": "c323ea7032259d49fff39332b4053429f1b1ae3ea95bd16ec9f31996e1fdab27",
+      "bytes": 624,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/inputs/agent.py",
+      "role": "Lineage validation and previous outcome rule, loaded by run_rq3.py",
+      "original_sha256": "0e735fe5492df9a6cd6a8bcaf17cae9a86cc99cb09e67b746462d365f942e125",
+      "published_sha256": "72d8e7725397cfe2e11901175afc8f73f105168bb3abae41906362c37d84b072",
+      "bytes": 61693,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_SECURITY_SERVER_HOST>",
+          "occurrences": 2,
+          "lines": [
+            111
+          ]
+        },
+        {
+          "placeholder": "<REDACTED_USER>",
+          "occurrences": 1,
+          "lines": [
+            156
+          ]
+        }
+      ]
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/inputs/paper.py",
+      "role": "Historical paper rule, replayed by run_rq3.py",
+      "original_sha256": "c942d6e76fd4a197bef5b11790cf23bf19770b2d95fec5f2ff7aa022c9baf113",
+      "published_sha256": "c942d6e76fd4a197bef5b11790cf23bf19770b2d95fec5f2ff7aa022c9baf113",
+      "bytes": 19044,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-03/inputs/agent_protocol.json",
+      "role": "Protocol read by agent.outcome()",
+      "original_sha256": "a6278d6ec4790241f69440ebe5ae6433e980bbe8529fe5cad17783bf6cd40a13",
+      "published_sha256": "a6278d6ec4790241f69440ebe5ae6433e980bbe8529fe5cad17783bf6cd40a13",
+      "bytes": 3647,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "RQ3_analysis/v2026.10.16-05/restricted_namespace.py",
+      "role": "Restricted-namespace diagnostic category",
+      "original_sha256": "35b1bc3506b4f73467b9db0c5ea36ef793169f3ff80857373076999ab5f03df8",
+      "published_sha256": "35b1bc3506b4f73467b9db0c5ea36ef793169f3ff80857373076999ab5f03df8",
+      "bytes": 11724,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "generate_graph_cohort_macros.py",
+      "role": "Shared helpers (common) and graph-cohort macros",
+      "original_sha256": "bafcb42ebd992eb364cddb9cbf6def0bfa5436fa33b1c9d839af9598e683e599",
+      "published_sha256": "bafcb42ebd992eb364cddb9cbf6def0bfa5436fa33b1c9d839af9598e683e599",
+      "bytes": 19792,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "table2_unique_models.py",
+      "role": "Table II unique-model ID-set counting",
+      "original_sha256": "de91f6547cc6d44fc23f492f8854b81e1af08f40d0b88b8cd7e0095df2425c92",
+      "published_sha256": "de91f6547cc6d44fc23f492f8854b81e1af08f40d0b88b8cd7e0095df2425c92",
+      "bytes": 16888,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/package_probe_validation.py",
+      "role": "PyPI/npm package extraction and registry verifier (frozen)",
+      "original_sha256": "31711b720f5dd437562e351f6a175448c6666838fee6cd88ef1afde1e9fcf2bb",
+      "published_sha256": "31711b720f5dd437562e351f6a175448c6666838fee6cd88ef1afde1e9fcf2bb",
+      "bytes": 7543,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/url_probe_validation.py",
+      "role": "URL extraction, URLhaus/PhishTank exact match, PSL, DNS NXDOMAIN verifier (frozen)",
+      "original_sha256": "05ec3669d9f0fb606fa0d6276488b8ed015bab351126912ab0b93037cc8ced35",
+      "published_sha256": "05ec3669d9f0fb606fa0d6276488b8ed015bab351126912ab0b93037cc8ced35",
+      "bytes": 9563,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/common.py",
+      "role": "Paths and digest helpers used by the c1 jobs",
+      "original_sha256": "7cba4a990825fbd04b42b1007eda67a10b8e111aaef377094fee2dfed12254d8",
+      "published_sha256": "7cba4a990825fbd04b42b1007eda67a10b8e111aaef377094fee2dfed12254d8",
+      "bytes": 1342,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/package_extraction_c1.py",
+      "role": "c1 package extraction correction (pkg-extract-v2026.10.11-c1)",
+      "original_sha256": "6779b820b636f8a2f68688da66cb38a1a361638aa43eef4dd41795bb87b09168",
+      "published_sha256": "6779b820b636f8a2f68688da66cb38a1a361638aa43eef4dd41795bb87b09168",
+      "bytes": 2077,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/url_extraction_c1.py",
+      "role": "c1 URL extraction correction (url-extract-v2026.10.11-c1)",
+      "original_sha256": "1f8de86d9121cc2361afdd402e7cf7fe3bdacd12fb9a81ced01d6d34fb66ab1d",
+      "published_sha256": "1f8de86d9121cc2361afdd402e7cf7fe3bdacd12fb9a81ced01d6d34fb66ab1d",
+      "bytes": 2251,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/reclassify_packages_c1.py",
+      "role": "Applies c1 package policy to the ledger; defines package_finding_effective_c1",
+      "original_sha256": "fd5f603e5a802512f83b0810c8b4c077bba7b93cb21814e8d1d332881c49eaaa",
+      "published_sha256": "f29bc2800909925db235239b37081708e99e43b0cd83bbcb576dd85e8a823e30",
+      "bytes": 6617,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_TACC_SCRATCH>",
+          "occurrences": 1,
+          "lines": [
+            55
+          ]
+        }
+      ]
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/reclassify_urls_c1.py",
+      "role": "Applies c1 URL policy to the ledger; defines url_finding_effective_c1",
+      "original_sha256": "10352313fd63c1a4a12eb53760e0deb9e5c181464d65e9d345312617a93341f6",
+      "published_sha256": "f23be0f4657051831da65b9d44f169ddb7cb98baff9c34b0c9234ac72f8884ab",
+      "bytes": 6913,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_TACC_SCRATCH>",
+          "occurrences": 1,
+          "lines": [
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "path": "2026_ICDE/dual_site_probe_v2026_10_10/brand_tld_review_c1.py",
+      "role": "Closed .brand TLD review overlay (url-brandtld-review-v2026.10.11-c1)",
+      "original_sha256": "cdf9a47d08e4d1c5831ac56fabd3bcc3aad16e5cb81c1df2525b393c932b722d",
+      "published_sha256": "b8137305036f0bd1a7a92a402ee132901bcbe090ce089fee6663ef3c4faa46ce",
+      "bytes": 5879,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_TACC_SCRATCH>",
+          "occurrences": 1,
+          "lines": [
+            50
+          ]
+        }
+      ]
+    }
+  ]
+}

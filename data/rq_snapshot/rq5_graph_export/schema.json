@@ -1,0 +1,97 @@
+{
+  "export_version": "v2026.10.20-01",
+  "conventions": {
+    "model_id": "Exact, case-sensitive Hugging Face repo id; the release node id is 'model::' + model_id.",
+    "space_id": "Exact, case-sensitive Space repo id; the release node id is 'space::' + space_id.",
+    "github_repo_key": "Lowercase 'owner/repo' key assigned by the archived extractor; the released node is 'https://github.com/' + github_repo_key. Not validated against GitHub.",
+    "provenance_ref": "'archive:<path relative to the archive root>#<record id>' or 'audit:<path relative to rq1_audit_2026Oct15>#<record id>'. data_row = 1-based data row after the CSV header; edges.rowid = SQLite rowid in table edges.",
+    "booleans": "0/1 integers."
+  },
+  "files": {
+    "cohort_models.csv": {
+      "grain": "one row per cohort model (6,963 expected)",
+      "columns": {
+        "model_id": "Canonical model id.",
+        "graph_node_id": "Release node id.",
+        "cohort_role": "upstream_base | derivative (disjoint).",
+        "base_rank": "roots.csv rank for bases; blank for derivatives.",
+        "parent_memberships": "Number of cohort memberships with this derivative as child; blank for bases.",
+        "graph_resolution_status": "resolved (family-01 endpoint and in the 2026-08-28 model inventory) | in_family01_not_in_model_inventory | in_model_inventory_not_in_family01 | unresolved.",
+        "graph_snapshot_id": "hugginggraph_v3_2026oct02@v2026.10.02-07"
+      }
+    },
+    "cohort_lineage.csv": {
+      "grain": "one row per original cohort membership (memberships.csv order; 6,821 expected); multi-parent derivatives keep one row per parent",
+      "columns": {
+        "membership_row": "1-based row in lineage_probe_v2026_10_10/manifest/memberships.csv.",
+        "parent_model_id": "Upstream base.",
+        "child_model_id": "Derivative.",
+        "parent_base_rank": "roots.csv rank of the parent.",
+        "recorded_adaptation_label": "Released family-01 edge_type: adapter | finetune | merged | quantized | new_version | converted.",
+        "excluded_label": "1 if label is new_version or converted; such rows are admitted under no policy.",
+        "lineage_evidence": "model_lineage_edges_merged.csv evidence (declared_parent or the inference/weak-field rule).",
+        "lineage_confidence": "model_lineage_edges_merged.csv confidence.",
+        "evidence_rule_id": "Raw canonical label basis: explicit | tag_heuristic | field_implied | default | inferred:<rule>.",
+        "label_basis": "RQ2 collapsed basis (rq_policy.basis_label): explicit | tag_implied | field_implied | default | inferred.",
+        "field_evidence": "declared_provenance.csv field_evidence code (declared rows only).",
+        "classification_reason": "declared_provenance.csv classification_reason code (declared rows only).",
+        "strict_admitted": "RQ2 Strict: basis explicit, label not excluded.",
+        "intermediate_admitted": "RQ2 Intermediate: compute_canonical.in_intermediate, declared, label not excluded.",
+        "declared_admitted": "RQ2 Declared: declared parent, label not excluded.",
+        "extended_admitted": "RQ2 Extended: label not excluded.",
+        "relationship_resolution_status": "resolved_family01_edge | not_in_family01.",
+        "provenance_ref": "Row in the archive's model_lineage_edges_merged.csv.",
+        "declared_provenance_ref": "Row in declared_provenance.csv (blank for non-declared rows)."
+      }
+    },
+    "model_space_edges.csv": {
+      "grain": "one row per released family-12 edge whose model is in the cohort",
+      "semantics": "used_by_space: the Space's Hugging Face API 'models' list names the model. A recorded association, not proof of runtime deployment.",
+      "columns": {
+        "model_id": "Cohort model.",
+        "space_id": "Space.",
+        "relationship_type": "used_by_space.",
+        "evidence_channel": "space_api.models (archived) or blank (no archived row).",
+        "evidence_confidence": "platform_linked or blank.",
+        "provenance_status": "archived_evidence_row | release_build_api_fetch_no_archived_row (edge added by the release builder's live space_info(expand=models) fetch for Spaces present in card metadata but absent from relationship metadata; no archived evidence row exists).",
+        "resolution_status": "resolved_space_card_inventory (Space in the 2026-09-24 Space card inventory) | space_not_in_card_inventory.",
+        "provenance_ref": "Archived evidence row, or the builder function for API-fetch edges.",
+        "release_ref": "Row in edges/csv/12_model_space_edges.csv."
+      }
+    },
+    "space_github_edges.csv": {
+      "grain": "one row per released family-14 edge whose Space appears in model_space_edges.csv",
+      "semantics": "links_to_github: a GitHub repository referenced in the Space README. A recorded association, not a verified software dependency. Distinct from model_github_edges.",
+      "columns": {
+        "space_id": "Space reached from the cohort.",
+        "github_repo_key": "Lowercase owner/repo.",
+        "relationship_type": "links_to_github.",
+        "evidence_channel": "Archived evidence prefix, verbatim: model_card_markdown. For Space edges this prefix is a label reused from the model extractor; the actual origin is the Space README (see evidence_actual_origin).",
+        "evidence_form": "markdown_link | embedded_url (derived from the archived evidence; anchor text not exported).",
+        "evidence_confidence": "readme_declared_link | readme_reference | badge_reference.",
+        "source_population": "Archived population code: with_metadata | empty_metadata.",
+        "evidence_actual_origin": "Snapshot the reference was extracted from.",
+        "resolution_status": "extracted_unvalidated: syntactically extracted, never checked against GitHub.",
+        "provenance_ref": "extraction_state SQLite rowid.",
+        "release_ref": "Row in edges/csv/14_space_github_edges.csv."
+      }
+    },
+    "model_github_edges.csv": {
+      "grain": "one row per released family-10 edge whose model is in the cohort",
+      "semantics": "links_to_github: a GitHub repository referenced in the model card README. Does not imply any Space uses that repository.",
+      "columns": {
+        "model_id": "Cohort model.",
+        "github_repo_key": "Lowercase owner/repo.",
+        "relationship_type": "links_to_github.",
+        "evidence_channel": "model_card_markdown.",
+        "evidence_form": "markdown_link | embedded_url.",
+        "evidence_confidence": "readme_declared_link | readme_reference | badge_reference.",
+        "source_population": "with_metadata | empty_metadata.",
+        "evidence_actual_origin": "Snapshot the reference was extracted from.",
+        "resolution_status": "extracted_unvalidated.",
+        "provenance_ref": "extraction_state SQLite rowid.",
+        "release_ref": "Row in edges/csv/10_model_github_edges.csv."
+      }
+    }
+  }
+}

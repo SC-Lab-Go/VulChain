@@ -1,0 +1,8 @@
+{
+ "released_distinct_sources": 111816,
+ "population_in_inventory": 93621,
+ "sources_not_in_inventory_exact": 18195,
+ "sample": 1000,
+ "seed": 0,
+ "method": "random.Random(0).sample(sorted(population), 1000)"
+}

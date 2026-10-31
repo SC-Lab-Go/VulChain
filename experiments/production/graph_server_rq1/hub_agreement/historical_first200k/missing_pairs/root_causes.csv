@@ -1,0 +1,10 @@
+root_cause,label,Fine-tune,Adapter,Quantized,Merge,Total,Percentage,confirmed,probable,unresolved
+C1_both_endpoints_absent_from_graph,Both endpoints absent from graph,1,1,0,0,2,0.2,2,0,0
+C2_derivative_absent_from_graph,Derivative endpoint absent from graph (not in crawled model population),47,19,87,33,186,18.2,186,0,0
+C3_upstream_absent_from_graph,Upstream endpoint absent from graph,1,4,5,0,10,1.0,10,0,0
+C4_derivative_card_not_crawled,Derivative in graph only as a referenced ID; its own card was never crawled,1,0,1,5,7,0.7,7,0,0
+C5_identifier_case_mismatch,Identifier mismatch: case only,0,0,3,0,3,0.3,3,0,0
+C6_upstream_alias_noninventory_id,"Identifier mismatch: derivative card names a different, non-inventory upstream ID (repository rename/alias)",207,46,387,172,812,79.5,637,162,13
+C7_card_changed_after_snapshot,Reference/snapshot temporal mismatch: card names upstream only in later (2026-09-25) README,0,0,1,0,1,0.1,0,1,0
+C8_unsupported_by_archived_card,Hub relation not supported by archived card (card names other in-inventory parent(s) or none),0,0,0,0,0,0.0,0,0,0
+TOTAL,All unrecovered pairs,257,70,484,210,1021,100.0,845,163,13

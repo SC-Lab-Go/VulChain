@@ -1,0 +1,39 @@
+{
+ "queried_sources": 200000,
+ "reference_triples": 15689,
+ "reference_pairs": 15689,
+ "released_triples_from_queried": 16075,
+ "released_pairs_from_queried": 16067,
+ "pair_recall": {
+  "k": 14668,
+  "n": 15689,
+  "p": 0.9349225572056855,
+  "lo": 0.9309553967560787,
+  "hi": 0.9386767878174321
+ },
+ "exact_label_recall": {
+  "k": 7336,
+  "n": 15689,
+  "p": 0.4675887564535662,
+  "lo": 0.4597902479981305,
+  "hi": 0.4754031328393239
+ },
+ "label_agreement_on_matched_pairs": {
+  "k": 7336,
+  "n": 14668,
+  "p": 0.5001363512407963,
+  "lo": 0.4920458080094768,
+  "hi": 0.5082268230717155
+ },
+ "released_pairs_absent_from_reference": 1399,
+ "reference_label_counts": {
+  "finetune": 3466,
+  "adapter": 1350,
+  "merged": 1589,
+  "quantized": 9284
+ },
+ "matched_pairs_by_evidence": {
+  "declared_parent": 14660,
+  "new_version_field": 8
+ }
+}

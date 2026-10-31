@@ -1,0 +1,40 @@
+{
+  "FT_rule": "Preserve recorded finetune including default, explicit, tag-implied and inferred labels; not proof of explicit fine-tuning.",
+  "RootsWithEligibleAdaptations": 3106,
+  "RootsWithoutEligibleAdaptations": 1781,
+  "TextGenLineageRoots": 4887,
+  "derived_from": "table2_frozen_snapshot.v2026.10.27-04.json",
+  "derived_from_sha256": "9cca733db1fc815f7bba6525fcba034acfc9865c8152d278794bc9f7ff66bf17",
+  "identity": "Exact case-sensitive source model IDs; no alias normalization.",
+  "readiness_rule": "Child status ready in original completed static snapshot; parent readiness not required.",
+  "snapshot_id": "v2026.10.27-04-unique-adaptation-models",
+  "stage_counts": {
+    "OneHop": {
+      "AD": 8200,
+      "Bases": 3106,
+      "FT": 11014,
+      "Merge": 320,
+      "Overlap": 0,
+      "Pairs": 23309,
+      "QT": 3641,
+      "UniqueDerivs": 23175,
+      "UniqueModels": 26281
+    },
+    "Ready": {
+      "AD": 3760,
+      "Bases": 782,
+      "FT": 3798,
+      "Merge": 217,
+      "Overlap": 0,
+      "Pairs": 8038,
+      "QT": 188,
+      "UniqueDerivs": 7963,
+      "UniqueModels": 8745
+    }
+  },
+  "stage_record_rows": {
+    "OneHop": 23309,
+    "Ready": 8038
+  },
+  "table2_stage_records.csv_sha256": "5789ad230dec925a4aae6e3eeffeb5ec979c955cc27bd7e90eddfe21952e9300"
+}

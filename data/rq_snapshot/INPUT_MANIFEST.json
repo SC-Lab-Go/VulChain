@@ -1,0 +1,33 @@
+{
+  "capture_cutoff_utc": "2026-10-30T20:08:45.609475+00:00",
+  "files": {
+    "canonical_comparisons.jsonl": "072bd4be59e25d2a40b1a6cbc0e743739ddd25a53be20e19cda97cd361a3ea51",
+    "evaluated_model_manifest.csv": "37cde76aa7e0059df588db0e185cdd340ae593e4ca5b8803274b7596f4a40dae",
+    "evaluated_relationships.csv": "2623b6e60e0d1aa0d8d666594c70cc9b58c99b4461ac03e7b65cc8dbbcd26a6f",
+    "model_status_audit.csv": "2118b98d39633a67790a37aa18b4b062f6b6cf4865cd13aa213585be76e5307d",
+    "qualified_occurrences.jsonl": "51c8886d955f03bcf785c6642fd1fb838ff35d8b68ca789c3abf57c7af001a8a",
+    "rq5_graph_export/cohort_lineage.csv": "5317550b2369eb4d0c9892fbee7505b6644ae711cc3145ce762178780d370c8a",
+    "rq5_graph_export/cohort_models.csv": "13aca9fda57ee926ae870d89ba5e276266500601f83705f839159c30c851d00b",
+    "rq5_graph_export/graph_manifest.json": "340067510697d47fb44f96ab10761c680d4611d9b737611e76b4d8161d28edde",
+    "rq5_graph_export/model_github_edges.csv": "b7169030ed4192d50a890cccf597f2048a7670e005affc74d0648b1d37525224",
+    "rq5_graph_export/model_space_edges.csv": "94dc766c41d98b145ccfc2072994c79bf285804088b623e7e405a888fd1cc7e4",
+    "rq5_graph_export/schema.json": "d3d0907a2bdad7c69c57ad348fa8d819c25c39274907838ee1fcc319ea3d8639",
+    "rq5_graph_export/sha256_manifest.txt": "b57ac06a885c0fb506368da9b23fd781cefba3743185a10ba9fc2d59ac390a97",
+    "rq5_graph_export/space_github_edges.csv": "d2c2c4c3dbfcc9b506512288f0d20732612abf3490a19869228b28374386e94d"
+  },
+  "redactions": {
+    "rq5_graph_export/graph_manifest.json": {
+      "original_sha256": "25e987d270f98dc6a9dbb745ed51149539c16e5171df8335843c6d849b204026",
+      "redacted_sha256": "340067510697d47fb44f96ab10761c680d4611d9b737611e76b4d8161d28edde",
+      "replaced": "absolute server path prefixes -> <release-root>/ and <home>/"
+    },
+    "rq5_graph_export/sha256_manifest.txt": {
+      "note": "graph_manifest.json pin updated 25e987d270f9... -> 340067510697... after path redaction; data-file pins unchanged",
+      "original_sha256": "544efbf6669d91b55960c6d70ffb6e32dd9f0642b2bcf196dec75b3e06762488",
+      "redacted_sha256": "b57ac06a885c0fb506368da9b23fd781cefba3743185a10ba9fc2d59ac390a97",
+      "replaced": "absolute server path prefixes -> <release-root>/ and <home>/"
+    }
+  },
+  "snapshot_id": "v2026.10.27-unified-01-b9e3e4d60181fa58",
+  "source": "Analysis snapshot v2026.10.27-unified-01-b9e3e4d60181fa58 and RQ5 graph export (cohort subgraph of graph release v2026.10.02-07)"
+}

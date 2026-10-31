@@ -1,0 +1,6 @@
+source,edge_type,target
+model::0-hero/Matter-0.2-32B,used_by_space,space::Darok/Featherless-Feud
+model::0-hero/Matter-0.2-7B-DPO,used_by_space,space::cot-leaderboard/open-cot-dashboard
+model::0-hero/Matter-0.2-7B-DPO,used_by_space,space::logikon/open_cot_leaderboard
+model::0-ma/beit-geometric-shapes-base,used_by_space,space::0-ma/geometric-shape-detector
+model::0-ma/efficientnet-b2-geometric-shapes,used_by_space,space::0-ma/geometric-shape-detector

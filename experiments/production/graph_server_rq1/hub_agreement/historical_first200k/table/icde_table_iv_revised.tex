@@ -1,0 +1,67 @@
+% Created: 2026-10-30 · Version: v2026.10.30-02
+% Purpose: Revised ICDE 2027 Table IV (subsection "Agreement with the Hub index"). Two mutually exclusive versions.
+% Requires booktabs. No \resizebox. No existing macro redefined. Graph-edge counts: HuggingGraph_v3.dot
+% (sha 348d92cd...), Model-to-Model labels finetune 710,010 / adapter 131,430 / quantized 66,064 / merged 53,498;
+% the All row (966,035) also contains 1,410 converted and 3,623 new_version edges.
+%
+% USE EXACTLY ONE VERSION. Never mix rows from the two reference sets.
+
+% ===========================================================================
+% VERSION 1 -- probability sample (PENDING: live pilot/primary not executed).
+% Fill from execution_v02/primary/evaluation/{adaptation_label_agreement,weighted_recovery}.csv
+% (scope excl_B, cutoff extraction). Ref. pairs / Recovered are observed integer counts; Recovery and
+% Label match are design-weighted estimates. Do not fill from pilot results.
+% ===========================================================================
+\begin{table}[t]
+\centering
+\small
+\caption{Agreement with the Hugging Face Hub model tree on a stratified probability sample of upstream models from the frozen 2026-08-28 inventory.
+\emph{Graph edges}: Model-to-Model edges in the released graph with that label (\emph{All} includes 1{,}410 \texttt{converted} and 3{,}623 \texttt{new\_version} edges, which have no Hub counterpart).
+\emph{Ref.\ pairs} and \emph{Recovered}: observed (unweighted) Hub-listed upstream--derivative pairs not created after our metadata snapshot, and those present as exact-identifier edges (any label).
+\emph{Recovery} and \emph{Label match}: design-weighted estimates; intervals treat the upstream model as the sampling unit, and label match is computed on recovered pairs.
+Both sources read the \texttt{base\_model} card field, so the table measures extraction completeness, not verified ancestry.}
+\label{tab:hub_agreement}
+\begin{tabular}{lrrrcc}
+\toprule
+Adaptation & Graph edges & Ref.\ pairs & Recovered & Recovery (\%) [95\% CI] & Label match (\%) \\
+\midrule
+Fine-tune    & 710{,}010 & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} \\
+Adapter      & 131{,}430 & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} \\
+Quantization &  66{,}064 & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} \\
+Merge        &  53{,}498 & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} \\
+\midrule
+All          & 966{,}035 & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} & \textbf{[pending]} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ===========================================================================
+% VERSION 2 -- freeze fallback (READY): earlier verified reference set, with its non-random limitation.
+% Use only if the primary probability-sample run is not complete and verified by 2026-11-06.
+% Sources: smoke_test_first200k/{metrics.json,label_confusion.csv} (Table IV reproduced exactly);
+% upstream-clustered intervals from validation/hub_reference_selection_audit_2027/statistical_assessment.md.
+% Label match = label-exact / recovered: 3,088/3,209; 1,055/1,280; 1,814/8,800; 1,379/1,379; 7,336/14,668.
+% ===========================================================================
+\begin{table}[t]
+\centering
+\small
+\caption{Agreement with the Hugging Face Hub model tree on a \emph{non-random} reference set: the Hub-listed derivatives of 5{,}222 models that had any, among 200{,}000 queried models (a lexicographic prefix of models added after our 2025 crawl).
+\emph{Graph edges}: Model-to-Model edges in the released graph with that label (\emph{All} includes 1{,}410 \texttt{converted} and 3{,}623 \texttt{new\_version} edges).
+\emph{Ref.\ pairs} and \emph{Recovered}: observed counts; a pair is recovered if the graph has an edge with exactly the same upstream and derivative identifiers, whatever its label.
+Intervals treat the upstream model as the sampling unit and describe this reference set only, not the Hub.
+\emph{Label match}: share of recovered pairs whose label equals the Hub relation.
+Both sources read the \texttt{base\_model} card field, so the table measures extraction completeness, not verified ancestry.}
+\label{tab:hub_agreement}
+\begin{tabular}{lrrrcc}
+\toprule
+Adaptation & Graph edges & Ref.\ pairs & Recovered & Recovery (\%) [95\% CI] & Label match (\%) \\
+\midrule
+Fine-tune    & 710{,}010 &  3{,}466 &  3{,}209 & 92.6 [90.3, 94.9] &  96.2 \\
+Adapter      & 131{,}430 &  1{,}350 &  1{,}280 & 94.8 [92.5, 97.1] &  82.4 \\
+Quantization &  66{,}064 &  9{,}284 &  8{,}800 & 94.8 [93.8, 95.8] &  20.6 \\
+Merge        &  53{,}498 &  1{,}589 &  1{,}379 & 86.8 [80.8, 92.7] & 100.0 \\
+\midrule
+All          & 966{,}035 & 15{,}689 & 14{,}668 & 93.5 [92.3, 94.7] &  50.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

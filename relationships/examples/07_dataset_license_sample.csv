@@ -1,0 +1,6 @@
+source,edge_type,target
+dataset::0-deng-0/st-code-dataset,has_license,license::cc-by-nc-4.0
+dataset::0-hero/MATH,has_license,license::apache-2.0
+dataset::0-hero/Matter-0.1,has_license,license::apache-2.0
+dataset::0-hero/Matter-0.1-Slim-A,has_license,license::apache-2.0
+dataset::0-hero/Matter-0.1-Slim-B,has_license,license::apache-2.0

@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-16",
+  "version": "v2026.10.19-rq3-01",
+  "purpose": "Versioned final user q_nx methodology; older immutable snapshot definitions remain preserved",
+  "definitions": {
+    "run_rq3.py": "293974f617c40bf7594da702c23805b45408f3c6960405869b744415332d6ee8",
+    "protocol.json": "bdf0118c84d6d4bc1d7d4df2e4c7707d5aaa47e34963586f2c2cbeee2a667a37",
+    "input_pin.json": "3be6341434679e06a083da6d0e66912e7d07dffc599569616cf25b6c54c31a52"
+  },
+  "previous_lock_backup": "<REDACTED_HOME>/HuggingGraph_v3_2026_Oct2/HuggingGraph_v3_2026_Oct2_repo/RQ3_analysis/v2026.10.16-03/FREEZE.json.bak.20261019-121427"
+}

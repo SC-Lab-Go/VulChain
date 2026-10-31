@@ -1,0 +1,11 @@
+# Created: 2026-10-30  Version: v2026.10.30-01
+# Conda environment for graph construction; experiments need only Python >= 3.10.
+name: vulchain
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - zstd
+  - pip
+  - pip:
+      - -r requirements.txt

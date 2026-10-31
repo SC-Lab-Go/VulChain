@@ -1,0 +1,6 @@
+source,edge_type,target
+dataset::sentence-transformers/s2orc,trained_on,model::sentence-transformers/all-MiniLM-L6-v2
+dataset::flax-sentence-embeddings/stackexchange_xml,trained_on,model::sentence-transformers/all-MiniLM-L6-v2
+dataset::nyu-mll/multi_nli,trained_on,model::sentence-transformers/all-MiniLM-L6-v2
+dataset::embedding-data/sentence-compression,trained_on,model::sentence-transformers/all-MiniLM-L6-v2
+dataset::embedding-data/altlex,trained_on,model::sentence-transformers/all-MiniLM-L6-v2

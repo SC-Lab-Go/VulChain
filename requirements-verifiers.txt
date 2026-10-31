@@ -1,0 +1,17 @@
+# Created: 2026-10-30
+# Version: v2026.10.30-02
+# Purpose: Third-party packages needed by the frozen URL verifier
+#          (experiments/production/2026_ICDE/url_probe_validation.py) and its
+#          offline tests. Pins copied from the production lock file
+#          2026_ICDE/url_probe_requirements.lock.txt. The package verifier and
+#          the RQ2-RQ5 analysis modules need only the standard library and numpy
+#          (bootstrap); unified_exports.py also uses matplotlib for figures.
+# Install in a separate environment from requirements.txt: idna/filelock pins differ.
+
+dnspython==2.9.0
+filelock==4.0.12
+idna==3.20
+requests==2.34.2
+requests-file==3.0.1
+tldextract==5.4.0
+validators==0.35.0

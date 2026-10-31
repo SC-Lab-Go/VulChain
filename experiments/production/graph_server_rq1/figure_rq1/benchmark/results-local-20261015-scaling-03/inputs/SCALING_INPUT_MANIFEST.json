@@ -1,0 +1,411 @@
+{
+  "families": [
+    {
+      "file": "01_model_model_edges.csv",
+      "population": 966035,
+      "sizes": {
+        "100": {
+          "bytes": 88987160,
+          "records": 966035,
+          "sha256": "78284f0119e44392d019788ef2268686cd93a4d9f143dc5e1091a46b1563eb47"
+        },
+        "25": {
+          "bytes": 22249976,
+          "records": 241509,
+          "sha256": "beb7211b1a83563b12b25f3807866f1e8b7c7a0d9e55420ef3e2f27e07807a00"
+        },
+        "50": {
+          "bytes": 44491328,
+          "records": 483018,
+          "sha256": "d59efcc731a94e199f617f1b8d352a1f966f88b70b5826a2c0bb5ef3140c405c"
+        }
+      },
+      "source_bytes": 88987160,
+      "source_sha256": "78284f0119e44392d019788ef2268686cd93a4d9f143dc5e1091a46b1563eb47"
+    },
+    {
+      "file": "02_model_dataset_edges.csv",
+      "population": 362064,
+      "sizes": {
+        "100": {
+          "bytes": 33753997,
+          "records": 362064,
+          "sha256": "c943f076db5d9e41f1375011d775cfc91004c8d71875886af7775db3ae81ed02"
+        },
+        "25": {
+          "bytes": 8441820,
+          "records": 90516,
+          "sha256": "5b9941307545439aa4d03356267aad28bda91554172b51db53ea0425c9c7f6c9"
+        },
+        "50": {
+          "bytes": 16881940,
+          "records": 181032,
+          "sha256": "09ed5bfec23c9c24c18eb02bd8df2b957be34d4a0c0c418efd852b221367806d"
+        }
+      },
+      "source_bytes": 33753997,
+      "source_sha256": "c943f076db5d9e41f1375011d775cfc91004c8d71875886af7775db3ae81ed02"
+    },
+    {
+      "file": "03_dataset_dataset_edges.csv",
+      "population": 12541,
+      "sizes": {
+        "100": {
+          "bytes": 1399722,
+          "records": 12541,
+          "sha256": "4b66c7cf18d3500194f83392baf24cda70a7b617bcfb669496dd0badfc6e7779"
+        },
+        "25": {
+          "bytes": 349072,
+          "records": 3135,
+          "sha256": "f3630ae79cf7996b4a25d0838687be8cf4ef5529ad0bbb416a4b661166f951e2"
+        },
+        "50": {
+          "bytes": 700965,
+          "records": 6270,
+          "sha256": "060c1457e8cbfbf6937283b63e3d23cad01af29526eaa1f931b8abceef32733a"
+        }
+      },
+      "source_bytes": 1399722,
+      "source_sha256": "4b66c7cf18d3500194f83392baf24cda70a7b617bcfb669496dd0badfc6e7779"
+    },
+    {
+      "file": "04_model_library_edges.csv",
+      "population": 1311386,
+      "sizes": {
+        "100": {
+          "bytes": 105305054,
+          "records": 1311386,
+          "sha256": "cdef7e68e053002d67b785ed8b76e2f3287541b6447fd140b2db0150ed8a690d"
+        },
+        "25": {
+          "bytes": 26331568,
+          "records": 327846,
+          "sha256": "2281e83d10e343893029da96745115c5b91d23b792d95fc7aacf5d801846edde"
+        },
+        "50": {
+          "bytes": 52657626,
+          "records": 655693,
+          "sha256": "2757e638fd9b0a42c7c14dc4e55229960d6521c5a07667669b9a5d277061665c"
+        }
+      },
+      "source_bytes": 105305054,
+      "source_sha256": "cdef7e68e053002d67b785ed8b76e2f3287541b6447fd140b2db0150ed8a690d"
+    },
+    {
+      "file": "05_dataset_library_edges.csv",
+      "population": 16864,
+      "sizes": {
+        "100": {
+          "bytes": 1750654,
+          "records": 16864,
+          "sha256": "d6d8398f677de7d5d9ec7615e4a2bbf13eec38b2c59a6d5dd9a2f55906ed4c72"
+        },
+        "25": {
+          "bytes": 437279,
+          "records": 4216,
+          "sha256": "f03d84b35f493e8f3cf364121e5a7493c561513f4dd1f7f000dc4070969e41b8"
+        },
+        "50": {
+          "bytes": 876319,
+          "records": 8432,
+          "sha256": "f5f7dd114e8f67b25f3135fd3638b90f5c18d1748a8a9abd4521cc660f56a7b4"
+        }
+      },
+      "source_bytes": 1750654,
+      "source_sha256": "d6d8398f677de7d5d9ec7615e4a2bbf13eec38b2c59a6d5dd9a2f55906ed4c72"
+    },
+    {
+      "file": "06_model_license_edges.csv",
+      "population": 1090845,
+      "sizes": {
+        "100": {
+          "bytes": 81111532,
+          "records": 1090845,
+          "sha256": "7c29ae2f9d4f0adcc09c487773c4cf0fbecc953d8e179d9cbe3dcd9a24d5e04d"
+        },
+        "25": {
+          "bytes": 20278461,
+          "records": 272711,
+          "sha256": "04c52bb319a544656e55a4ee754fec8167599958680db54ea6df7eb0af40c241"
+        },
+        "50": {
+          "bytes": 40556283,
+          "records": 545422,
+          "sha256": "0db5245a7e63dad3bb8d62568b1eb1131e1142714d9d1aa616f73ceae4cd131b"
+        }
+      },
+      "source_bytes": 81111532,
+      "source_sha256": "7c29ae2f9d4f0adcc09c487773c4cf0fbecc953d8e179d9cbe3dcd9a24d5e04d"
+    },
+    {
+      "file": "07_dataset_license_edges.csv",
+      "population": 331317,
+      "sizes": {
+        "100": {
+          "bytes": 25462336,
+          "records": 331317,
+          "sha256": "ec46a1f958fe78c98fd7e780ef3949a84b88e0358a3006c86c8c72e16e6f70c0"
+        },
+        "25": {
+          "bytes": 6365955,
+          "records": 82829,
+          "sha256": "a4302118542076a8d0ebb9917dd3fe1267cac4b7e57131313b34412f21cd9864"
+        },
+        "50": {
+          "bytes": 12732186,
+          "records": 165658,
+          "sha256": "9af972e7cce9222872afd989c6317e0cc97f8641a36c1bee36028e82d71118e6"
+        }
+      },
+      "source_bytes": 25462336,
+      "source_sha256": "ec46a1f958fe78c98fd7e780ef3949a84b88e0358a3006c86c8c72e16e6f70c0"
+    },
+    {
+      "file": "08_model_task_edges.csv",
+      "population": 577077,
+      "sizes": {
+        "100": {
+          "bytes": 46507506,
+          "records": 577077,
+          "sha256": "c66031d57592d313e4ee12f7dceaac0066c00b72a6c7ee849f7f5075f5384e7d"
+        },
+        "25": {
+          "bytes": 11623322,
+          "records": 144269,
+          "sha256": "71c4e425355bdc6788537b2af4e342bd2774e627958d978ac04dddb9f2d6c8ba"
+        },
+        "50": {
+          "bytes": 23251057,
+          "records": 288538,
+          "sha256": "f9b2d638bfe21c3a398367651bfab3fe1b14a99d9d4f76af7c9e7b63c044e5e5"
+        }
+      },
+      "source_bytes": 46507506,
+      "source_sha256": "c66031d57592d313e4ee12f7dceaac0066c00b72a6c7ee849f7f5075f5384e7d"
+    },
+    {
+      "file": "09_dataset_task_edges.csv",
+      "population": 317412,
+      "sizes": {
+        "100": {
+          "bytes": 28805668,
+          "records": 317412,
+          "sha256": "a12ab3abe4c587e27a7a330924f84f1fe744b256a8dd2bfa1eff8a093f9efba6"
+        },
+        "25": {
+          "bytes": 7206664,
+          "records": 79353,
+          "sha256": "304798f45cd0e16ef3745c18495d126461013de2e73642ffc4df87ef2191e9dd"
+        },
+        "50": {
+          "bytes": 14413243,
+          "records": 158706,
+          "sha256": "b727c1a73a55c3556c35a5d8d686965e472a603c65f89ff8582ba830e9bb349e"
+        }
+      },
+      "source_bytes": 28805668,
+      "source_sha256": "a12ab3abe4c587e27a7a330924f84f1fe744b256a8dd2bfa1eff8a093f9efba6"
+    },
+    {
+      "file": "10_model_github_edges.csv",
+      "population": 962855,
+      "sizes": {
+        "100": {
+          "bytes": 101717131,
+          "records": 962855,
+          "sha256": "4eee8850b6b3f19d44af8267ff101606e4cd1527119e729fdf6c468338492e2d"
+        },
+        "25": {
+          "bytes": 25437621,
+          "records": 240714,
+          "sha256": "c3c6b355c83e263ddad7ec6658336f1a30d451ee218bfd03cbaff76a82f5d6e5"
+        },
+        "50": {
+          "bytes": 50881357,
+          "records": 481428,
+          "sha256": "bfbb4e40a39c7d6760115865dcebfa2b69486de46267c6d9d81fb980d5cc2a68"
+        }
+      },
+      "source_bytes": 101717131,
+      "source_sha256": "4eee8850b6b3f19d44af8267ff101606e4cd1527119e729fdf6c468338492e2d"
+    },
+    {
+      "file": "11_dataset_github_edges.csv",
+      "population": 188888,
+      "sizes": {
+        "100": {
+          "bytes": 18959327,
+          "records": 188888,
+          "sha256": "53bd4d4ee3d8c070e4ef114b1c2efc6ee096aa3e040ed723dd8c97067c09d8a9"
+        },
+        "25": {
+          "bytes": 4740399,
+          "records": 47222,
+          "sha256": "fbb433aac76ab25a004547d08a7dab80eb86833a6ce4fb47ca8ea64ef747f0e3"
+        },
+        "50": {
+          "bytes": 9480709,
+          "records": 94444,
+          "sha256": "7c2d3413ef5ff4060a1f04216b137e94200d17d6476989189c017020ca51aa2a"
+        }
+      },
+      "source_bytes": 18959327,
+      "source_sha256": "53bd4d4ee3d8c070e4ef114b1c2efc6ee096aa3e040ed723dd8c97067c09d8a9"
+    },
+    {
+      "file": "12_model_space_edges.csv",
+      "population": 941121,
+      "sizes": {
+        "100": {
+          "bytes": 80623028,
+          "records": 941121,
+          "sha256": "6059800ee2020aa3a85ef34b886f35a7e51f6b8e71f8b44626b119d66bf6e62b"
+        },
+        "25": {
+          "bytes": 20155300,
+          "records": 235280,
+          "sha256": "87523ec2a47eb42cc653143a317256fca62646379aaa1819415aa9a8266a51b1"
+        },
+        "50": {
+          "bytes": 40309391,
+          "records": 470560,
+          "sha256": "5e3640c1f434c28491a6a152e7d96d65b8547a3e7331d68336ca236b4eeebf56"
+        }
+      },
+      "source_bytes": 80623028,
+      "source_sha256": "6059800ee2020aa3a85ef34b886f35a7e51f6b8e71f8b44626b119d66bf6e62b"
+    },
+    {
+      "file": "13_dataset_space_edges.csv",
+      "population": 83061,
+      "sizes": {
+        "100": {
+          "bytes": 7197163,
+          "records": 83061,
+          "sha256": "0b8b79b3e5b5a6a138ec6e641dcaba8391d098da87cea3f71ab7770bd49e9fe8"
+        },
+        "25": {
+          "bytes": 1797924,
+          "records": 20765,
+          "sha256": "f2996c97aedb3a1b1a0c70e063e2f1de7d08b6f0d3526392dcc920ae0822b200"
+        },
+        "50": {
+          "bytes": 3596855,
+          "records": 41530,
+          "sha256": "3e151a3a2dc5cc0cdd4510291d1753ebe242804816425f015131032c9727da53"
+        }
+      },
+      "source_bytes": 7197163,
+      "source_sha256": "0b8b79b3e5b5a6a138ec6e641dcaba8391d098da87cea3f71ab7770bd49e9fe8"
+    },
+    {
+      "file": "14_space_github_edges.csv",
+      "population": 113755,
+      "sizes": {
+        "100": {
+          "bytes": 10470507,
+          "records": 113755,
+          "sha256": "714f37ca2381632f7249c3e2a416801737c939460aff9b0f6310a7e50e9dfa7f"
+        },
+        "25": {
+          "bytes": 2617854,
+          "records": 28439,
+          "sha256": "7e40d498b5956b465f7b06ccf22a9ff0b0ef3ece0372fa3cd43fd31f75d29fde"
+        },
+        "50": {
+          "bytes": 5233802,
+          "records": 56878,
+          "sha256": "66c024e21d21824fc2b3d763e647c8233cd6376a43d414cfc3dce146f499edb7"
+        }
+      },
+      "source_bytes": 10470507,
+      "source_sha256": "714f37ca2381632f7249c3e2a416801737c939460aff9b0f6310a7e50e9dfa7f"
+    },
+    {
+      "file": "15_space_license_edges.csv",
+      "population": 420369,
+      "sizes": {
+        "100": {
+          "bytes": 25603379,
+          "records": 420369,
+          "sha256": "742b268bb5aa3711e4642841632e1d007f78835f8d7ec6a90853111a0912989d"
+        },
+        "25": {
+          "bytes": 6399538,
+          "records": 105092,
+          "sha256": "ce05f784ce88b1d509cef9202b7b2ba9fc47de29bbc9e7f55f79c559df4770c3"
+        },
+        "50": {
+          "bytes": 12802997,
+          "records": 210184,
+          "sha256": "813544cabde3edca4d70f7a639a097d83d134419c22dca97a1c5378a464eed7f"
+        }
+      },
+      "source_bytes": 25603379,
+      "source_sha256": "742b268bb5aa3711e4642841632e1d007f78835f8d7ec6a90853111a0912989d"
+    },
+    {
+      "file": "16_space_task_edges.csv",
+      "population": 43223,
+      "sizes": {
+        "100": {
+          "bytes": 2836392,
+          "records": 43223,
+          "sha256": "c5ef2f1f7a0678ef7d96a8037ca0e13201601b7e70fb44105bd3794ee66b7547"
+        },
+        "25": {
+          "bytes": 709359,
+          "records": 10806,
+          "sha256": "108b0945b2af3bf2d638fc06bf6cb85f06134be89fec5fcc2d0c2d6b7fc600b6"
+        },
+        "50": {
+          "bytes": 1418631,
+          "records": 21612,
+          "sha256": "206c4628eddbc7b46f05bd9d3aa602f4d529f2b30d47b59b498042e10b7ca280"
+        }
+      },
+      "source_bytes": 2836392,
+      "source_sha256": "c5ef2f1f7a0678ef7d96a8037ca0e13201601b7e70fb44105bd3794ee66b7547"
+    },
+    {
+      "file": "17_space_agent_edges.csv",
+      "population": 37059,
+      "sizes": {
+        "100": {
+          "bytes": 2836568,
+          "records": 37059,
+          "sha256": "4ae75a7a56b02bff1d9b9cd2320fd3d80755de966b1cfeed9e2b7a9a60b19147"
+        },
+        "25": {
+          "bytes": 709139,
+          "records": 9265,
+          "sha256": "10bef59f6bd29e0df8931d93a7538b66da7d70ada2caac42db559f872166460e"
+        },
+        "50": {
+          "bytes": 1418601,
+          "records": 18530,
+          "sha256": "22fdf26ba30292fc2fcaee052ac05936faf8b5631faa5f3323ebf2489ad448bb"
+        }
+      },
+      "source_bytes": 2836568,
+      "source_sha256": "4ae75a7a56b02bff1d9b9cd2320fd3d80755de966b1cfeed9e2b7a9a60b19147"
+    }
+  ],
+  "method": "exact-count deterministic systematic sampling within each immutable family CSV",
+  "totals": {
+    "100": {
+      "bytes": 663327124,
+      "records": 7775872
+    },
+    "25": {
+      "bytes": 165851251,
+      "records": 1943967
+    },
+    "50": {
+      "bytes": 331703290,
+      "records": 3887935
+    }
+  },
+  "version": "v2026.10.15-01"
+}

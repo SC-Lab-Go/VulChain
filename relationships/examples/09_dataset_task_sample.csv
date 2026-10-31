@@ -1,0 +1,6 @@
+source,edge_type,target
+dataset::0-deng-0/st-code-dataset,supports_task,task::text-generation
+dataset::0-hero/OIG-small-chip2,supports_task,task::conversational
+dataset::0-hero/OIG-small-chip2,supports_task,task::text2text-generation
+dataset::0-ma/geometric-shapes,supports_task,task::image-classification
+dataset::0010Grent/dataclaw-peteromallet,supports_task,task::text-generation

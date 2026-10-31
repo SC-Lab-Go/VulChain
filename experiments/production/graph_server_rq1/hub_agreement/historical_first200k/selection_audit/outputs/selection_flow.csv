@@ -1,0 +1,10 @@
+stage_id,selection_stage,count,excluded_from_previous,exclusion_reason_or_note
+S0,Crawled Hub model inventory (2026-08-28),3029377,,all_huggingface_models_2026Aug28.csv; unique stripped IDs
+S0b,"Context: VulChain model nodes (paper, evidence-qualified graph)",1885384,,"Not the sampling frame; the frame was drawn from the inventory, not from graph nodes"
+S1,Eligible: inventory IDs absent from the CIKM 2025 baseline (delta),1324194,1705183,Excluded: ID present in all_huggingface_models_CIKM.csv (delta_models.py)
+S2,"Selected: first 200,000 rows of the code-point-sorted delta",200000,1124194,"Excluded: rows >= 200,000 (IDs >= 'John6666/jedpoint-real-v8-vae-sdxl'); crawl run with --start 0 --end 200000"
+S3,Queries attempted (sources; 4 relation filters each),200000,0,800000 relation-filter queries minimum; pagination requests not logged
+S4,Successful queries (all 4 relations completed),200000,0,"errors.csv holds a header only; log 'Done: 200000 completed, 0 failed'"
+S5,Nonempty model-tree responses (>=1 derivative),5222,194778,Excluded: Hub returned no derivative for any relation
+S6,Reference parent-derivative pairs,15689,0,15073 distinct derivatives
+S7,"Reference pairs recovered (exact IDs, any label)",14668,1021,Unrecovered pairs: see hub_reference_missing_pairs_2027

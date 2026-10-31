@@ -1,0 +1,133 @@
+{
+  "official_release_sha256": "348d92cd4fe9cd49254fadec499b8bc8e80bba167ad97b82d03b1b24085b694b",
+  "summary": [
+    {
+      "input_bytes": 165851251,
+      "input_records": 1943967,
+      "matches_official_release": false,
+      "output_bytes": 255182716,
+      "output_nodes": 1480204,
+      "output_sha256": "46b392134fe3d097a1ea9bc4e8eadd1e351be06040cbb76c5b82e5329aa68ec9",
+      "peak_rss_cv_percent": 0.132705816582623,
+      "peak_rss_mean_gib": 0.20657475789388022,
+      "peak_rss_sd_gib": 0.0002741367193166502,
+      "size_percent": 25,
+      "throughput_cv_percent": 1.1729064567160146,
+      "throughput_mean_edges_s": 146212.9035141236,
+      "throughput_sd_edges_s": 1714.9405858691125,
+      "wall_cv_percent": 1.1659078419888207,
+      "wall_mean_seconds": 13.296666666666667,
+      "wall_sd_seconds": 0.1550268793897802
+    },
+    {
+      "input_bytes": 331703290,
+      "input_records": 3887935,
+      "matches_official_release": false,
+      "output_bytes": 510365797,
+      "output_nodes": 2273877,
+      "output_sha256": "844e48647766b74ec26a9ff79a8f361d8cf1ab99d33d2d653569b311b2c7bb1f",
+      "peak_rss_cv_percent": 0.0042165751856108585,
+      "peak_rss_mean_gib": 0.3261909484863281,
+      "peak_rss_sd_gib": 1.375408659158321e-05,
+      "size_percent": 50,
+      "throughput_cv_percent": 0.8466810707977741,
+      "throughput_mean_edges_s": 146279.9440954057,
+      "throughput_sd_edges_s": 1238.5245970293663,
+      "wall_cv_percent": 0.8471279344768762,
+      "wall_mean_seconds": 26.58,
+      "wall_sd_seconds": 0.22516660498395366
+    },
+    {
+      "input_bytes": 663327124,
+      "input_records": 7775872,
+      "matches_official_release": true,
+      "output_bytes": 1020652753,
+      "output_nodes": 3137207,
+      "output_sha256": "348d92cd4fe9cd49254fadec499b8bc8e80bba167ad97b82d03b1b24085b694b",
+      "peak_rss_cv_percent": 0.041435871204130635,
+      "peak_rss_mean_gib": 0.4465751647949219,
+      "peak_rss_sd_gib": 0.00018504231011405798,
+      "size_percent": 100,
+      "throughput_cv_percent": 1.796610232137619,
+      "throughput_mean_edges_s": 145810.86078912884,
+      "throughput_sd_edges_s": 2619.652844505428,
+      "wall_cv_percent": 1.8027994523105126,
+      "wall_mean_seconds": 53.34,
+      "wall_sd_seconds": 0.9616132278624274
+    }
+  ],
+  "verified_runs": [
+    {
+      "bytes": 255182716,
+      "edges": 1943967,
+      "nodes": 1480204,
+      "run": 1,
+      "sha256": "46b392134fe3d097a1ea9bc4e8eadd1e351be06040cbb76c5b82e5329aa68ec9",
+      "size_percent": 25
+    },
+    {
+      "bytes": 255182716,
+      "edges": 1943967,
+      "nodes": 1480204,
+      "run": 2,
+      "sha256": "46b392134fe3d097a1ea9bc4e8eadd1e351be06040cbb76c5b82e5329aa68ec9",
+      "size_percent": 25
+    },
+    {
+      "bytes": 255182716,
+      "edges": 1943967,
+      "nodes": 1480204,
+      "run": 3,
+      "sha256": "46b392134fe3d097a1ea9bc4e8eadd1e351be06040cbb76c5b82e5329aa68ec9",
+      "size_percent": 25
+    },
+    {
+      "bytes": 510365797,
+      "edges": 3887935,
+      "nodes": 2273877,
+      "run": 1,
+      "sha256": "844e48647766b74ec26a9ff79a8f361d8cf1ab99d33d2d653569b311b2c7bb1f",
+      "size_percent": 50
+    },
+    {
+      "bytes": 510365797,
+      "edges": 3887935,
+      "nodes": 2273877,
+      "run": 2,
+      "sha256": "844e48647766b74ec26a9ff79a8f361d8cf1ab99d33d2d653569b311b2c7bb1f",
+      "size_percent": 50
+    },
+    {
+      "bytes": 510365797,
+      "edges": 3887935,
+      "nodes": 2273877,
+      "run": 3,
+      "sha256": "844e48647766b74ec26a9ff79a8f361d8cf1ab99d33d2d653569b311b2c7bb1f",
+      "size_percent": 50
+    },
+    {
+      "bytes": 1020652753,
+      "edges": 7775872,
+      "nodes": 3137207,
+      "run": 1,
+      "sha256": "348d92cd4fe9cd49254fadec499b8bc8e80bba167ad97b82d03b1b24085b694b",
+      "size_percent": 100
+    },
+    {
+      "bytes": 1020652753,
+      "edges": 7775872,
+      "nodes": 3137207,
+      "run": 2,
+      "sha256": "348d92cd4fe9cd49254fadec499b8bc8e80bba167ad97b82d03b1b24085b694b",
+      "size_percent": 100
+    },
+    {
+      "bytes": 1020652753,
+      "edges": 7775872,
+      "nodes": 3137207,
+      "run": 3,
+      "sha256": "348d92cd4fe9cd49254fadec499b8bc8e80bba167ad97b82d03b1b24085b694b",
+      "size_percent": 100
+    }
+  ]
+}

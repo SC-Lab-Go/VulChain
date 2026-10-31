@@ -1,0 +1,37 @@
+# Graph: distributed as a GitHub Release asset, not tracked
+graph/VulChain.dot
+*.tar.zst
+*.tar.zst.part-*
+
+# Generated outputs
+/outputs/
+
+# Pre-change backups (CLAUDE.md backup rule; v2026.10.30-02)
+*.bak.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+.huggingface/
+hf_token*
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Live results pipeline (contain restricted inputs) and local configuration
+/results/
+/freezes/
+configs/*.local.json
+
+# Backups
+*.bak.*

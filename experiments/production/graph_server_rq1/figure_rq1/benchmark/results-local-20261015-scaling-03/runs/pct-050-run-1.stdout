@@ -1,0 +1,29 @@
+HuggingGraph controlled assembly
+model-model                   483,018
+model-dataset                 181,032
+dataset-dataset                 6,270
+model-library                 655,693
+dataset-library                 8,432
+model-license                 545,422
+dataset-license               165,658
+model-task                    288,538
+dataset-task                  158,706
+model-github                  481,428
+dataset-github                 94,444
+model-space                   470,560
+dataset-space                  41,530
+space-github                   56,878
+space-license                 210,184
+space-task                     21,612
+space-agent                    18,530
+Total edges                 3,887,935
+model nodes                 1,443,398
+dataset nodes                 314,534
+space nodes                   449,620
+library nodes                   1,529
+license nodes                   3,097
+task nodes                        581
+github nodes                   61,109
+agent nodes                         9
+Total nodes                 2,273,877
+DOT: <REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-1.dot

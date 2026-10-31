@@ -1,0 +1,313 @@
+{
+ "table_check": {
+  "table_iv_recomputed": {
+   "Fine-tune": [
+    3466,
+    3209,
+    257
+   ],
+   "Adapter": [
+    1350,
+    1280,
+    70
+   ],
+   "Quantized": [
+    9284,
+    8800,
+    484
+   ],
+   "Merge": [
+    1589,
+    1379,
+    210
+   ],
+   "Total": [
+    15689,
+    14668,
+    1021
+   ]
+  },
+  "table_iv_published": {
+   "Fine-tune": [
+    3466,
+    3209,
+    257
+   ],
+   "Adapter": [
+    1350,
+    1280,
+    70
+   ],
+   "Quantized": [
+    9284,
+    8800,
+    484
+   ],
+   "Merge": [
+    1589,
+    1379,
+    210
+   ],
+   "Total": [
+    15689,
+    14668,
+    1021
+   ]
+  },
+  "matches_published": true,
+  "reference_rows": 15689,
+  "queried_sources": 200000,
+  "sources_with_ge1_reference_pair": 5222,
+  "crawl_error_rows": 0,
+  "label_exact_pairs": 7336,
+  "graph_mm_edges": 966035,
+  "graph_model_nodes": 1888591,
+  "graph_pairs_from_queried_sources": 16067,
+  "graph_pairs_from_queried_sources_absent_from_reference": 1399,
+  "matching": "exact case-sensitive owner/name strings; model:: prefix removed; Hub 'merge'=='merged'; any graph label counts",
+  "published_metrics_pair_recall_k": 14668,
+  "published_metrics_exact_label_k": 7336,
+  "published_confusion_missing": {
+   "adapter": 70,
+   "finetune": 257,
+   "merged": 210,
+   "quantized": 484
+  },
+  "published_confusion_matches": true
+ },
+ "missing_rows": 1021,
+ "distinct_pairs": 1021,
+ "cause_counts": {
+  "C1_both_endpoints_absent_from_graph": 2,
+  "C2_derivative_absent_from_graph": 186,
+  "C3_upstream_absent_from_graph": 10,
+  "C4_derivative_card_not_crawled": 7,
+  "C5_identifier_case_mismatch": 3,
+  "C6_upstream_alias_noninventory_id": 812,
+  "C7_card_changed_after_snapshot": 1,
+  "C8_unsupported_by_archived_card": 0
+ },
+ "confidence_counts": {
+  "probable": 163,
+  "confirmed": 845,
+  "unresolved": 13
+ },
+ "absent_endpoint_pairs": 198,
+ "both_endpoints_present_pairs": 823,
+ "identifier_normalization_pairs": 815,
+ "pipeline_exclusion_pairs": 0,
+ "card_names_upstream_exact": 0,
+ "reverse_edges": 0,
+ "case_insensitive_edges": 3,
+ "alternative_label_edges": 0,
+ "unresolved_pairs": 0,
+ "alias_pairs_by_corroboration": {
+  "same_owner": 88,
+  "same_repo_name_other_owner;upstream_card_mentions_old_id": 84,
+  "same_repo_name_other_owner": 103,
+  "upstream_card_mentions_distinct_old_name": 7,
+  "upstream_card_mentions_old_id;same_owner;upstream_card_mentions_distinct_old_name": 46,
+  "same_repo_name_other_owner;upstream_card_mentions_old_id;old_id_in_2025_inventory_upstream_not": 193,
+  "same_repo_name_other_owner;old_id_in_2025_inventory_upstream_not": 167,
+  "same_owner;upstream_card_mentions_distinct_old_name": 35,
+  "upstream_card_mentions_old_id;same_owner;upstream_card_mentions_distinct_old_name;old_id_in_2025_inventory_upstream_not": 27,
+  "same_owner;old_id_in_2025_inventory_upstream_not": 27,
+  "same_owner;upstream_card_mentions_distinct_old_name;old_id_in_2025_inventory_upstream_not": 4,
+  "upstream_card_mentions_old_id;upstream_card_mentions_distinct_old_name;old_id_in_2025_inventory_upstream_not": 10,
+  "none": 13,
+  "upstream_card_mentions_old_id;upstream_card_mentions_distinct_old_name": 4,
+  "old_id_in_2025_inventory_upstream_not": 1,
+  "same_repo_name_other_owner;upstream_card_mentions_old_id;upstream_card_mentions_distinct_old_name;old_id_in_2025_inventory_upstream_not": 3
+ },
+ "alias_distinct_old_ids": 352,
+ "alias_distinct_upstreams": 284,
+ "missing_by_upstream_top15": [
+  [
+   "ATH-MaaS/Marco-o1",
+   59
+  ],
+  [
+   "HelpingAI/PixelGen",
+   33
+  ],
+  [
+   "DS-Archive/L3.3-70B-Magnum-v4-SE",
+   30
+  ],
+  [
+   "DS-Archive/limarp-zloss-mixtral-8x7b-qlora",
+   30
+  ],
+  [
+   "ChaoticNeutrals/Kunocchini-7b-128k-test",
+   20
+  ],
+  [
+   "DS-Archive/Mixtral-8x7B-Instruct-v0.1-LimaRP-ZLoss",
+   15
+  ],
+  [
+   "0xSero/Gemma-4-21B",
+   14
+  ],
+  [
+   "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+   12
+  ],
+  [
+   "HelpingAI/HELVETE-3B",
+   10
+  ],
+  [
+   "Comfy-Org/MiniMax-H3",
+   9
+  ],
+  [
+   "Finisha-F-scratch/Learnia",
+   9
+  ],
+  [
+   "Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+   9
+  ],
+  [
+   "CYFRAGOVPL/PLLuM-12B-nc-instruct-2412",
+   9
+  ],
+  [
+   "DavidAU/Qwen3.5-9B-Claude-4.6-OS-HERETIC-UNCENSORED-INSTRUCT",
+   9
+  ],
+  [
+   "ATH-MaaS/Ovis2-4B",
+   8
+  ]
+ ],
+ "missing_by_upstream_owner_top10": [
+  [
+   "ATH-MaaS",
+   133
+  ],
+  [
+   "DS-Archive",
+   115
+  ],
+  [
+   "ChaoticNeutrals",
+   77
+  ],
+  [
+   "Finisha-F-scratch",
+   66
+  ],
+  [
+   "0xSero",
+   47
+  ],
+  [
+   "CYFRAGOVPL",
+   46
+  ],
+  [
+   "HelpingAI",
+   44
+  ],
+  [
+   "DavidAU",
+   37
+  ],
+  [
+   "Blackfrost-AI",
+   15
+  ],
+  [
+   "CohereLabs",
+   14
+  ]
+ ],
+ "missing_by_derivative_owner_top10": [
+  [
+   "Clemylia",
+   46
+  ],
+  [
+   "mlx-community",
+   23
+  ],
+  [
+   "TheBloke",
+   23
+  ],
+  [
+   "mradermacher",
+   18
+  ],
+  [
+   "nightmedia",
+   17
+  ],
+  [
+   "ATH-MaaS",
+   13
+  ],
+  [
+   "Finisha-F-scratch",
+   13
+  ],
+  [
+   "featherless-ai-quants",
+   13
+  ],
+  [
+   "fairy322",
+   13
+  ],
+  [
+   "ClaudioItaly",
+   11
+  ]
+ ],
+ "distinct_upstreams_with_missing": 403,
+ "secondary_factor_counts": {
+  "alias_same_owner": 228,
+  "derivative_2026Sep25_frontmatter_names_upstream": 29,
+  "alias_same_repo_name_other_owner": 556,
+  "alias_upstream_card_mentions_old_id": 372,
+  "alias_upstream_card_mentions_distinct_old_name": 137,
+  "upstream_in_crawl_inventory_but_no_graph_edges": 12,
+  "card_names_noninventory_parent": 11,
+  "alias_old_id_in_2025_inventory_upstream_not": 438,
+  "derivative_not_in_2026Aug28_crawl_inventory": 195,
+  "derivative_readme_2026Sep25_restricted": 19,
+  "same_owner_graph_child_of_upstream_outside_reference(possible_derivative_rename)": 1,
+  "derivative_readme_2026Sep25_no_readme": 2,
+  "derivative_listed_in_derived_models_without_identifiable_parent": 1
+ },
+ "percentages": {
+  "C1_both_endpoints_absent_from_graph": 0.2,
+  "C2_derivative_absent_from_graph": 18.2,
+  "C3_upstream_absent_from_graph": 1.0,
+  "C4_derivative_card_not_crawled": 0.7,
+  "C5_identifier_case_mismatch": 0.3,
+  "C6_upstream_alias_noninventory_id": 79.5,
+  "C7_card_changed_after_snapshot": 0.1,
+  "C8_unsupported_by_archived_card": 0.0
+ },
+ "sensitivity_recall_if_alias_and_case_resolved": {
+  "k": 15483,
+  "n": 15689,
+  "p": 0.9869
+ },
+ "sensitivity_recall_if_confirmed_alias_and_case_resolved": {
+  "k": 15308,
+  "n": 15689,
+  "p": 0.9757
+ },
+ "graph_mm_sources_not_in_crawl_inventory": 18195,
+ "graph_mm_edges_with_source_not_in_crawl_inventory": 121771,
+ "graph_mm_sources_not_in_inventory_that_look_like_local_paths": 290,
+ "graph_mm_sources_not_in_inventory_unnamespaced": 1355,
+ "graph_mm_edges_with_unnamespaced_noninventory_source": 38972,
+ "graph_mm_sources_not_in_inventory_case_variant_of_inventory_id": 1034,
+ "graph_mm_edges_with_case_variant_source": 37071
+}

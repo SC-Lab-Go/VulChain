@@ -1,0 +1,6 @@
+source,edge_type,target
+model::0-0-WasAlreadyTaken/mobilenet_multilabel,has_license,license::other
+model::0-ASWIN-0/huggingface-sl,has_license,license::apache-2.0
+model::0-Single-0/SimpleDecisionAI,has_license,license::mit
+model::0-U/TECHROGRAPH,has_license,license::apache-2.0
+model::0-hero/BitMoD,has_license,license::apache-2.0

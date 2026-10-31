@@ -1,0 +1,6 @@
+source,edge_type,target
+model::0-hero/BitMoD,links_to_github,https://github.com/thepowerfuldeez/olmo
+model::0-hero/flan-alpaca-ul2,links_to_github,https://github.com/declare-lab/flan-alpaca
+model::0-hero/flan-alpaca-ul2,links_to_github,https://github.com/tatsu-lab/stanford_alpaca
+model::0-hero/flan-alpaca-ul2,links_to_github,https://github.com/tloen/alpaca-lora
+model::0-hero/mistral-speech-to-text,links_to_github,https://github.com/umuthopeyildirim/doom-mistral

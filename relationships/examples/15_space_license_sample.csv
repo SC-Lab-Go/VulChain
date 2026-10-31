@@ -1,0 +1,6 @@
+source,edge_type,target
+space::0-0-3/Serverless-ImgGen-Hub,has_license,license::apache-2.0
+space::0-Masa-0/diffusers-image-outpaint,has_license,license::apache-2.0
+space::0-V/Gemini_Server,has_license,license::mit
+space::0-V/Kagi-Translate-Read-Frog,has_license,license::mit
+space::0-V/Kagi_Translate_Eudic,has_license,license::mit

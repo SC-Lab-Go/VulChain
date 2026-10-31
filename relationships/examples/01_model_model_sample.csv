@@ -1,0 +1,6 @@
+source,edge_type,target
+model::Qwen/Qwen3.8-Flash-Next,finetune,model::unsloth/Qwen3.8-Flash-Next-GGUF
+model::Qwen/Qwen3.8-27B,finetune,model::unsloth/Qwen3.8-27B-GGUF
+model::zai-org/GLM-5.3-Flash,finetune,model::unsloth/GLM-5.3-Flash-GGUF
+model::MiniMaxAI/MiniMax-H3,finetune,model::FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
+model::Qwen/Qwen3.8-27B,quantized,model::OBLITERATUS/Qwen3.8-27B-OBLITERATED

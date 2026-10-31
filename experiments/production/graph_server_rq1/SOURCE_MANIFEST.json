@@ -1,0 +1,1310 @@
+{
+  "created": "2026-10-30",
+  "version": "v2026.10.30-04",
+  "source": "Graph Server RQ1 transfer package v2026.10.30-transfer-01 (189 files, SHA256SUMS verified on arrival). Paths below are package paths; graph_server_source is the original location.",
+  "redaction_policy": "Only machine-specific literals are replaced: the Graph Server home directory, its hostname, and the account name. No code, constant, measurement or definition is changed. Reversing the placeholders with the private values reproduces original_sha256 exactly.",
+  "placeholders": [
+    "<REDACTED_HOME>",
+    "<REDACTED_GRAPH_SERVER_HOST>",
+    "<REDACTED_USER>"
+  ],
+  "not_included": "RESTRICTED-RAW Hub crawls and inventories; RESTRICTED-INTERNAL host load snapshots, hardware listing, crawl log and harness logs; the 17 released edge CSVs (identical to the graph release, read via --release-dir); model_lineage_edges_merged.csv (100 MB, optional evaluator input); the in-progress 2027 probability-sample experiment; benchmark run DOTs.",
+  "files": [
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-1.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-1.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-1.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-1.stdout",
+      "original_sha256": "1192cc652df5027296baf4491d31adcd01f85ecf5192e46ef526367182db1e89",
+      "published_sha256": "3ffd44cbcc41bacec9c96aec286a88df8013beb1538e5833377b9bf62264256a",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-1.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-1.time",
+      "original_sha256": "3ae4390a8914a403ad154364fd99d2fb57fc1e6c780737ded0dff561801f5588",
+      "published_sha256": "8f8b94f36877ae5daf91702561594f74064b685878d6a2e879e0f394d36285e9",
+      "bytes": 1487,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-2.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-2.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-2.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-2.stdout",
+      "original_sha256": "f42686353908c08594e2741fdeb2373d377f1afaa968630603483488f213b61d",
+      "published_sha256": "cc21cb1e50c777cb668e1354f80def0030d0ea29cf7f2d15aa4b001e0d79f2ff",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-2.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-2.time",
+      "original_sha256": "df4ef406c29ba2065a482ad74f8e6f6012609f6591429f3074e36856b07ff062",
+      "published_sha256": "61efd23f5c5364d810bc310d2a9e8ebba40b5cdb35a114fc717b5920879ce9f1",
+      "bytes": 1487,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-3.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-3.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-3.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-3.stdout",
+      "original_sha256": "33b22306a6489cf80babdc3f7c1087cb25a37f7ee9148e17dbbbf2aa32175831",
+      "published_sha256": "592278398c5ef9ba21d9169fb9baa3d560c72ee66d3375ededa6e1137376e026",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-025-run-3.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-025-run-3.time",
+      "original_sha256": "85921cd4e63885acc40db40dc9a99887d88a4d67edf96e0df07e00d2e6a8493c",
+      "published_sha256": "9ce6050d7b14a1656c055782ef8b3d832f1edda7976c62e59fe664c611e86300",
+      "bytes": 1487,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-1.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-1.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-1.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-1.stdout",
+      "original_sha256": "1773109d6f4ab3b9bed5c7176f7df15bb367fd54e59afa5d5f08a0334cd110d6",
+      "published_sha256": "cc55d741b7ab98fb7b8d4d0ff724a8137b9dec19050b4e35e59109e08a0b36da",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-1.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-1.time",
+      "original_sha256": "b531631b9ffa698b9c7a051fc3729bffed00ec82ccf8cbe872ee65d4bff0b1b1",
+      "published_sha256": "ac7b4b7184cb7ebd3bb305006e5b10d5e4b10d2437122ea293aa973e74aa4b96",
+      "bytes": 1488,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-2.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-2.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-2.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-2.stdout",
+      "original_sha256": "0bb33ed75a4272ddc9e3b744d999127e78218143504649bce4cc93a00b8b4395",
+      "published_sha256": "144c713a9604753aa76af5bd7ca47827cf6a6aed3c1a5147c71ec563ff7e110a",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-2.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-2.time",
+      "original_sha256": "f68fb102e8ccf0baae6da93ce46a37cd1d7904e3c2671077fa773f0efa1108e2",
+      "published_sha256": "b915d2a5c25c684e57f1fd65a25449a7a1ec903abf5aa3d66ab65402ceb1b1b1",
+      "bytes": 1489,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-3.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-3.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-3.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-3.stdout",
+      "original_sha256": "c484b9648718960de3f4f4fc0e595ddfdc25c461df8d27570d87dbcedd17c875",
+      "published_sha256": "f1a538b202b13d951550cb0304c987170719de5a1da951bf0ebccd832c7b5c11",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-050-run-3.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-050-run-3.time",
+      "original_sha256": "272ecd29019e09b1a34ef8dadf8119786ced9c4816fa9a2c2ad0f162272f3834",
+      "published_sha256": "a2fed92c509dbfa368f17bf7397bdc065aff9e9c6441876aa245c5a85e54a127",
+      "bytes": 1488,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-1.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-1.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-1.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-1.stdout",
+      "original_sha256": "52dfd8fff1aaceb373576e795c0d863c31c9af7a1954ad203a39c49dce7cecd9",
+      "published_sha256": "eb7dc7c024a6dc6c3422d66acec41dd8dd9ba6012bbad72fed8ce8efb9706ded",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-1.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-1.time",
+      "original_sha256": "0df14633aac29a8ea7a9127cebf708accdadb92089efebb7d2da3897fc277aaa",
+      "published_sha256": "115e6179e3740fb022b05c9028dd30609d5599ead224ba2f33dae6153b4582c9",
+      "bytes": 1491,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-2.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-2.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-2.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-2.stdout",
+      "original_sha256": "7c5ea3e991c8eec90d6e9434cc154cfd8088413c9eb70a2d299530cb2b55f1c9",
+      "published_sha256": "b9e297d16974ed2bfe0175ed6079eb7324e392a3b53f8fbbdfd5c586812bee30",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-2.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-2.time",
+      "original_sha256": "6d5830d2571fea2146820426579956b7fce61b79b62b12031dc834e95e92a6ab",
+      "published_sha256": "488d954df8d09ccc875aca49f786721a16a1c69c9287a522c7c7a2c797e4b893",
+      "bytes": 1491,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-3.stderr",
+      "role": "Builder stderr (empty)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-3.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-3.stdout",
+      "role": "Builder stdout (edge/node counts)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-3.stdout",
+      "original_sha256": "ac34dd88c88cb793cdba64dd84dee6991120669e3a5540e01bd73f31a7d9b218",
+      "published_sha256": "121808016030dbb0002d019a776d053fc943665079860f1cfbe536d20d66f3c4",
+      "bytes": 1256,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            29
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/runs/pct-100-run-3.time",
+      "role": "Timing log (/usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/runs/pct-100-run-3.time",
+      "original_sha256": "a485d4b19e1f31755e036533fda774ebce3635b5e0e1b3cd04dfe34de5df9c12",
+      "published_sha256": "e2188f9d084b0a4a7df792d723b064ecd493669588ae314544c458ef26393216",
+      "bytes": 1490,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 4,
+          "lines": [
+            1
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/source/rq1_scaling_figure.py",
+      "role": "Original figure-generation script (values hardcoded from scaling_summary.csv)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/rq1_scaling_figure.py",
+      "original_sha256": "6ec890b6b0be565fb6c769873b74569946044074c62ca5418f19f4a39ddbe199",
+      "published_sha256": "6ec890b6b0be565fb6c769873b74569946044074c62ca5418f19f4a39ddbe199",
+      "bytes": 5477,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/scripts/analyze_scaling_results.py",
+      "role": "Original benchmark pipeline script",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/scripts/analyze_scaling_results.py",
+      "original_sha256": "f6c03ecf6f54044911d0ea0c8f6d005ddb85bcfeaa88820ddbcbe0fec220812e",
+      "published_sha256": "f6c03ecf6f54044911d0ea0c8f6d005ddb85bcfeaa88820ddbcbe0fec220812e",
+      "bytes": 4789,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/scripts/build_hugginggraph_scaling.py",
+      "role": "Original benchmark pipeline script",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/scripts/build_hugginggraph_scaling.py",
+      "original_sha256": "15edae125515af13b9fcae901662be4cc70a5b622c2723e35b61933e02d2e464",
+      "published_sha256": "15edae125515af13b9fcae901662be4cc70a5b622c2723e35b61933e02d2e464",
+      "bytes": 2922,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/scripts/prepare_scaling_inputs.py",
+      "role": "Original benchmark pipeline script",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/scripts/prepare_scaling_inputs.py",
+      "original_sha256": "23ff7a337faef477b4279b48e15fa502e38eb639e357e6dd3b27ffa29f61f60a",
+      "published_sha256": "23ff7a337faef477b4279b48e15fa502e38eb639e357e6dd3b27ffa29f61f60a",
+      "bytes": 2841,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/scripts/run_scaling_local.sh",
+      "role": "Original benchmark driver (3 sizes x 3 runs, /usr/bin/time -v)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/run_scaling_local.sh",
+      "original_sha256": "223fa963f7817b15e2db88c056ba7f36724036797e99723820de4184199c79ee",
+      "published_sha256": "739cf1fabdb653c8cbaf7354ca83dcd3b51099a90814ec1bb80dae686e65baf9",
+      "bytes": 2360,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            11
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/scripts/summarize_scaling_benchmarks.py",
+      "role": "Original benchmark pipeline script",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/scripts/summarize_scaling_benchmarks.py",
+      "original_sha256": "f785302580d952bb1516489684ea78e5ebc323f039275d83a8c2335ced950de1",
+      "published_sha256": "f785302580d952bb1516489684ea78e5ebc323f039275d83a8c2335ced950de1",
+      "bytes": 2328,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/reference_builder/build_hugginggraph_v3.py",
+      "role": "Release builder imported by the benchmark builder (sha a5c96d10... in builder.sha256)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/hugginggraph_v3_2026oct02_reproducibility/source/build_hugginggraph_v3.py",
+      "original_sha256": "a5c96d108b5800c1907a9f0eec129a80eb5d9ac67442b0cf1f67e701fdc8e1a2",
+      "published_sha256": "a5c96d108b5800c1907a9f0eec129a80eb5d9ac67442b0cf1f67e701fdc8e1a2",
+      "bytes": 6276,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/reference_builder/requirements.txt",
+      "role": "Release environment requirements",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/hugginggraph_v3_2026oct02_reproducibility/source/requirements.txt",
+      "original_sha256": "1c4634c237f26d1f1c768f455844751147ab5836870d77b2f40c863c8e0d750d",
+      "published_sha256": "1c4634c237f26d1f1c768f455844751147ab5836870d77b2f40c863c8e0d750d",
+      "bytes": 688,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/docs/benchmarks_README.md",
+      "role": "Benchmark directory README",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/README.md",
+      "original_sha256": "11700697107094029d0850a3d0ec7341a8fdd66136711524b8527ead5e51a2c4",
+      "published_sha256": "0e828ce02e1ecc03e149ab25a88cff8c2d37441ce6e3b818fbf0f3236d2d36e4",
+      "bytes": 2816,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 2,
+          "lines": [
+            10,
+            25
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/docs/scalability_PREFLIGHT.md",
+      "role": "Benchmark preflight/configuration notes",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/PREFLIGHT.md",
+      "original_sha256": "6e0676313f2baf8bfea59a6593c432624047fb822501439185c257bc5e48fb7f",
+      "published_sha256": "4ef36c3ea55e5942eecc3eada1a0b4a0ad759bb7a06bbccc8b0f93073dfbaa00",
+      "bytes": 2410,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 2,
+          "lines": [
+            37,
+            45
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/COMPLETE",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/COMPLETE",
+      "original_sha256": "40eee293c52c143f0441ae1e7590792c21158bcd9440fe934b05353a4eaa8c2a",
+      "published_sha256": "40eee293c52c143f0441ae1e7590792c21158bcd9440fe934b05353a4eaa8c2a",
+      "bytes": 21,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/RQ1_SCALING_TABLE.tex",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/RQ1_SCALING_TABLE.tex",
+      "original_sha256": "6175b82ce9da060af09df03b881dc5d732bf8e4e496f9f50957dfea03909ddce",
+      "published_sha256": "6175b82ce9da060af09df03b881dc5d732bf8e4e496f9f50957dfea03909ddce",
+      "bytes": 797,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/SCALING_REPORT.md",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/SCALING_REPORT.md",
+      "original_sha256": "703b7578f8a26032c062e06118af814e21bc3adcbf7b1939a138affff6d3ea2e",
+      "published_sha256": "03bb80b4725f02a372ce3f4b1476e3d4612c1c314236a4d278f944362b9c085a",
+      "bytes": 3545,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_GRAPH_SERVER_HOST>",
+          "occurrences": 1,
+          "lines": [
+            8
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/builder.sha256",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/builder.sha256",
+      "original_sha256": "7790987a9fb27077a81c92ee5823a9d7f454a0b3f0595c7d4cebdc2d26752ed1",
+      "published_sha256": "73fa64c799f19e4431832a4431c6ec5e880ce78686e8d7786bd82d01632e508e",
+      "bytes": 472,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 2,
+          "lines": [
+            1,
+            2
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/input-preparation.stdout",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/input-preparation.stdout",
+      "original_sha256": "a540e1ddcd0f79032f42682a49f1d32aedbadfd42bdac054b88a2346ccefd148",
+      "published_sha256": "a540e1ddcd0f79032f42682a49f1d32aedbadfd42bdac054b88a2346ccefd148",
+      "bytes": 190,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/inputs/SCALING_INPUT_MANIFEST.json",
+      "role": "Per-family input sizes/records/sha256 for 25/50/100%",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/inputs/SCALING_INPUT_MANIFEST.json",
+      "original_sha256": "9fe0163fddd3ae167a06982ff512f19c20ab629f0788ffea133a582eed17f706",
+      "published_sha256": "9fe0163fddd3ae167a06982ff512f19c20ab629f0788ffea133a582eed17f706",
+      "bytes": 13044,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/scaling_performance.csv",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/scaling_performance.csv",
+      "original_sha256": "cb2f1e6f67f75fa8a1ca4fc47db1382b06539b6f1912fb067379595b32f7502f",
+      "published_sha256": "e5900458c94818f8a1dff1bdeb4d6eea620dd9daf71826ea39e55fc97a00cbf2",
+      "bytes": 5165,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 18,
+          "lines": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/scaling_performance.json",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/scaling_performance.json",
+      "original_sha256": "c4558d1b42869558c1c6e1ae344518583b215d13a6abff4c3ee57a2e9d5e2478",
+      "published_sha256": "7e26f154cdf00f0c51258a67dc78f0e822fb1bf845699cb7bbca438ebb494532",
+      "bytes": 8004,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 18,
+          "lines": [
+            8,
+            9,
+            24,
+            25,
+            40,
+            41,
+            56,
+            57,
+            72,
+            73,
+            88,
+            89,
+            104,
+            105,
+            120,
+            121,
+            136,
+            137
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/scaling_summary.csv",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/scaling_summary.csv",
+      "original_sha256": "c602fa180a4e58f5ca13b2d802473b53fd99eac8f8ef234b6355eeb631fd7c25",
+      "published_sha256": "c602fa180a4e58f5ca13b2d802473b53fd99eac8f8ef234b6355eeb631fd7c25",
+      "bytes": 1110,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/benchmark/results-local-20261015-scaling-03/scaling_summary.json",
+      "role": "Original benchmark measurement/summary (source of figure values)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/ICDE2027_RQ1_graph_quality_v2026_10_15/benchmarks/scalability/results-local-20261015-scaling-03/scaling_summary.json",
+      "original_sha256": "a4ed517ee64c905a7e3fb76bb238fe8b86c170d969db4157b506b1b188170461",
+      "published_sha256": "a4ed517ee64c905a7e3fb76bb238fe8b86c170d969db4157b506b1b188170461",
+      "bytes": 4238,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/output/rq1_scaling_figure_cropped.pdf",
+      "role": "Generated figure as produced 2026-10-16 (cropped = LaTeX-ready copy)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/rq1_scaling_figure_cropped.pdf",
+      "original_sha256": "e5eb1602347d202192ee76b8387e5c86f4f357cb1857e956fcf56ce177665c71",
+      "published_sha256": "e5eb1602347d202192ee76b8387e5c86f4f357cb1857e956fcf56ce177665c71",
+      "bytes": 13635,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/output/rq1_scaling_figure_cropped.png",
+      "role": "Generated figure as produced 2026-10-16 (cropped = LaTeX-ready copy)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/rq1_scaling_figure_cropped.png",
+      "original_sha256": "9db2697a7aab2f1df2387e8177fce82d3f1f186a7b67ded710da4dbb9ba7a10f",
+      "published_sha256": "9db2697a7aab2f1df2387e8177fce82d3f1f186a7b67ded710da4dbb9ba7a10f",
+      "bytes": 230233,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/audit/figure7_throughput_audit.md",
+      "role": "Audit: benchmark used full released DOT (7,775,872 edges)",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_probability_sample_2027/figure7_throughput_audit.md",
+      "original_sha256": "9dd35d9240ff98148b436af878e8d7b2fa1571ec5202f7ffbcc854116263bcd3",
+      "published_sha256": "9dd35d9240ff98148b436af878e8d7b2fa1571ec5202f7ffbcc854116263bcd3",
+      "bytes": 3767,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "figure_rq1/audit/graph_snapshot_reconciliation.md",
+      "role": "Released vs analytical graph reconciliation",
+      "artifact": "fig:rq1",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_probability_sample_2027/graph_snapshot_reconciliation.md",
+      "original_sha256": "31f2f80b212ba1bb137f62b5c4157866871a0c92132736dfe85cb5d9bb9962e7",
+      "published_sha256": "31f2f80b212ba1bb137f62b5c4157866871a0c92132736dfe85cb5d9bb9962e7",
+      "bytes": 4908,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/acquisition/delta_models.py",
+      "role": "Builds delta inventory (2026-08-28 minus 2025 baseline) whose 200k prefix was queried",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/delta_models.py",
+      "original_sha256": "ef4624a31493c20fdc5144674c8c67fc3260315f0a11a1bfe9ef617846514e38",
+      "published_sha256": "ef4624a31493c20fdc5144674c8c67fc3260315f0a11a1bfe9ef617846514e38",
+      "bytes": 1237,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/acquisition/graph_model_model_master.py",
+      "role": "Original Hub model-tree crawler v2026.08.31-01 (token read at runtime, none stored)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/graph_model_model_master.py",
+      "original_sha256": "fae218327d455645828d3f4bcd016d062f8c3c0f800d68ab1f67b4b6e329b113",
+      "published_sha256": "fae218327d455645828d3f4bcd016d062f8c3c0f800d68ab1f67b4b6e329b113",
+      "bytes": 16942,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/acquisition/model_pipeline.md",
+      "role": "Crawl command notes",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/model_pipeline.md",
+      "original_sha256": "8b6bd520a89e5f10500f6dab98117fb2bd7236fb35d36931cf2e16203a50ea08",
+      "published_sha256": "8b6bd520a89e5f10500f6dab98117fb2bd7236fb35d36931cf2e16203a50ea08",
+      "bytes": 1768,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/evaluator/eval_hf_tree_recall.py",
+      "role": "Original exact-ID matching + label comparison + Wilson CI evaluator",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/rq1_audit_2026Oct15/scripts/eval_hf_tree_recall.py",
+      "original_sha256": "c735703386dfe8e1f28c2608d623886c63678826820a7b81a11bffa847d9d3e1",
+      "published_sha256": "c735703386dfe8e1f28c2608d623886c63678826820a7b81a11bffa847d9d3e1",
+      "bytes": 4802,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/evaluator/sampling_summary.json",
+      "role": "Prepared-but-unrun random-1k plan (context only)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/rq1_audit_2026Oct15/hf_tree_random1k/sampling_summary.json",
+      "original_sha256": "0e09811f844a9175043ab369a44a829f7ca3742ff229441dab9fd02768d20961",
+      "published_sha256": "0e09811f844a9175043ab369a44a829f7ca3742ff229441dab9fd02768d20961",
+      "bytes": 210,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/published_output/metrics.json",
+      "role": "Generated evaluator output: Ref. pairs, Recovered, Wilson CI",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/rq1_audit_2026Oct15/hf_tree_random1k/smoke_test_first200k/metrics.json",
+      "original_sha256": "f49e5421631440e6d80a77df0f5b58158f61cd45cebbcc4bc66885a3e6ea295a",
+      "published_sha256": "f49e5421631440e6d80a77df0f5b58158f61cd45cebbcc4bc66885a3e6ea295a",
+      "bytes": 834,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/published_output/label_confusion.csv",
+      "role": "Generated evaluator output: label confusion (Label match column)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/extension_updated_code/rq1_audit_2026Oct15/hf_tree_random1k/smoke_test_first200k/label_confusion.csv",
+      "original_sha256": "9b5b889eb60acdebd514120b33a06f01a87a5103f28621e4cad19d195e08f646",
+      "published_sha256": "9b5b889eb60acdebd514120b33a06f01a87a5103f28621e4cad19d195e08f646",
+      "bytes": 475,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/README.md",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/README.md",
+      "original_sha256": "477d4319f265fdbfb55117f698d92a9bb6996aaaa1ce4aa37773dc15cd8a99a7",
+      "published_sha256": "4d55fd2395397a01ff97b77b148a136e4e892102b4e8b9fc41db797efdb72707",
+      "bytes": 5924,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            61
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/scripts/audit_selection.py",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/scripts/audit_selection.py",
+      "original_sha256": "76fcf7e3eacc78bf50801c4085497d02112ece9f0a01d3cda4a9f61584ed5a90",
+      "published_sha256": "bce52f68c483077b4b04add3d4500231fe8c34e3a5bcd223a3a0b05b1990b39b",
+      "bytes": 31941,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            31
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/tests/test_selection_audit.py",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/tests/test_selection_audit.py",
+      "original_sha256": "862e8b449aeb2a12bca7e02920c4e4ab214743c3813b16a0db8aee52e1129ba6",
+      "published_sha256": "862e8b449aeb2a12bca7e02920c4e4ab214743c3813b16a0db8aee52e1129ba6",
+      "bytes": 9598,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/outputs/selection_audit.json",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/outputs/selection_audit.json",
+      "original_sha256": "e7af7c83b8f26917a0c1a35848b5cbbf73bf26be11e944993a3acefdf77c0927",
+      "published_sha256": "7f30b087dc7d44517d03d5e569de0ee45fe03a475c14e75fed3a0bbac126b38e",
+      "bytes": 39533,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 20,
+          "lines": [
+            947,
+            953,
+            959,
+            965,
+            971,
+            977,
+            983,
+            989,
+            995,
+            1001,
+            1007,
+            1013,
+            1019,
+            1025,
+            1031,
+            1037,
+            1043,
+            1049,
+            1055,
+            1061
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/outputs/selection_flow.csv",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/outputs/selection_flow.csv",
+      "original_sha256": "7d6facbb4371ca1984a046a6f541f3d410748d3205d9e48ea762ead56485ad12",
+      "published_sha256": "7d6facbb4371ca1984a046a6f541f3d410748d3205d9e48ea762ead56485ad12",
+      "bytes": 1296,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/outputs/per_source_recovery.csv",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/outputs/per_source_recovery.csv",
+      "original_sha256": "547f07595c0cbee4a4c0e22fd32c24ecf1d91212f1212921a6740f6f94e3f986",
+      "published_sha256": "547f07595c0cbee4a4c0e22fd32c24ecf1d91212f1212921a6740f6f94e3f986",
+      "bytes": 371440,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/statistical_assessment.md",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/statistical_assessment.md",
+      "original_sha256": "71a7459c8f36d5580b35458dca7d3abbe49d0b89380a7e0ab07e864626974a2b",
+      "published_sha256": "71a7459c8f36d5580b35458dca7d3abbe49d0b89380a7e0ab07e864626974a2b",
+      "bytes": 6055,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/reference_pair_validation.md",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/reference_pair_validation.md",
+      "original_sha256": "a1e7087d0a21ae45637bb0e5f8c0864b247a0374bbb8931ebffca12dfc9e59fa",
+      "published_sha256": "a1e7087d0a21ae45637bb0e5f8c0864b247a0374bbb8931ebffca12dfc9e59fa",
+      "bytes": 5554,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/representativeness_report.md",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/representativeness_report.md",
+      "original_sha256": "2f005a89dc8f115d72e8dd726138ca7e91a98f124e724b961739409994f338d1",
+      "published_sha256": "2f005a89dc8f115d72e8dd726138ca7e91a98f124e724b961739409994f338d1",
+      "bytes": 9227,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/selection_audit/selection_trace.md",
+      "role": "Clustered (by upstream) CI + cluster bootstrap implementation/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_selection_audit_2027/selection_trace.md",
+      "original_sha256": "74266e2d62ec5a641333e6381c54c92ee4347664fdc25ff2b7ea1ef7b296c170",
+      "published_sha256": "b7927e862c275ed450d970780bc9f07cc6db3f1bcaed45f0726c2801123fcc30",
+      "bytes": 8451,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            8
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/table/icde_table_iv_revised.tex",
+      "role": "Generated table: VERSION 2 = historical values; VERSION 1 = probability-sample template [pending]",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_probability_sample_2027/icde_table_iv_revised.tex",
+      "original_sha256": "b26866d0a68a191b5cd4bc61df5e5a9cc19600d9a2a6478444934aac457f0f75",
+      "published_sha256": "b26866d0a68a191b5cd4bc61df5e5a9cc19600d9a2a6478444934aac457f0f75",
+      "bytes": 4923,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/README.md",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/README.md",
+      "original_sha256": "26dd56c586b707b21d2ec31452bf7ebe427e8ac845153ed3575e3b2e670c7e19",
+      "published_sha256": "c57c4465b07582fa0733def060f5e8a8163db279eb98850bd3cf3cabde13cc7c",
+      "bytes": 8632,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 2,
+          "lines": [
+            45,
+            105
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/diagnostic_report.md",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/diagnostic_report.md",
+      "original_sha256": "2fd1be9c4352654d035ce04a1cfc424d4cebeb470d221463bbd3b351a0f0f5b8",
+      "published_sha256": "72c9136c7f1b2c69015227f0d0df75053272ba5d4ce45e01a9c1fdca5741bcdd",
+      "bytes": 16793,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            7
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/summary.json",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/summary.json",
+      "original_sha256": "963ad73fac4541cd788e228e09b8e9d4b23e97740798ded18ab2e21a820dee6f",
+      "published_sha256": "963ad73fac4541cd788e228e09b8e9d4b23e97740798ded18ab2e21a820dee6f",
+      "bytes": 6716,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/root_causes.csv",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC-DATA",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/root_causes.csv",
+      "original_sha256": "fe680d703aeb578ea980a7b1b7fca9feaa96d26bb82567393e6166858fe521a7",
+      "published_sha256": "fe680d703aeb578ea980a7b1b7fca9feaa96d26bb82567393e6166858fe521a7",
+      "bytes": 1147,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/missing_pairs.csv",
+      "role": "Verified alias-resolution / unrecovered-pair ledger (C6 = rename/transfer alias)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC-DATA",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/missing_pairs.csv",
+      "original_sha256": "0012c392f182db193192b400d92c7032a6e8348153ebad4acddff789b9b7aea8",
+      "published_sha256": "0012c392f182db193192b400d92c7032a6e8348153ebad4acddff789b9b7aea8",
+      "bytes": 1133225,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/scripts/diagnose_missing_pairs.py",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/scripts/diagnose_missing_pairs.py",
+      "original_sha256": "580439da0a35993cfa974b93acc64d59ad2da9825af4b46dcc5acaf44f035bb5",
+      "published_sha256": "23080ac945ee9b76a594281e4443b9b7910a29dad3eaea4cbb87361c8732113c",
+      "bytes": 30199,
+      "verbatim": false,
+      "redactions": [
+        {
+          "placeholder": "<REDACTED_HOME>",
+          "occurrences": 1,
+          "lines": [
+            35
+          ],
+          "lines_truncated": false
+        }
+      ]
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/scripts/dot_graph.py",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/scripts/dot_graph.py",
+      "original_sha256": "471eef4ac6b040fc7b471ee3b6c1202fb4bf3abf16dcc4a46c2cff1a9ddabf8d",
+      "published_sha256": "471eef4ac6b040fc7b471ee3b6c1202fb4bf3abf16dcc4a46c2cff1a9ddabf8d",
+      "bytes": 1752,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/missing_pairs/scripts/test_missing_pairs.py",
+      "role": "Missing-pair diagnostic (alias resolution, Table IV recount) code/outputs/tests/docs",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/validation/hub_reference_missing_pairs_2027/scripts/test_missing_pairs.py",
+      "original_sha256": "af1047bf9ae0f5b6eed79859dcac016210289248f33e8518dad724a8719f1ed3",
+      "published_sha256": "af1047bf9ae0f5b6eed79859dcac016210289248f33e8518dad724a8719f1ed3",
+      "bytes": 8415,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/reference/graph_model_model_first_200k.csv",
+      "role": "Archived Hub API reference pairs (Source,Edge_type,Target)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC-DATA",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/graph_model_model_first_200k.csv",
+      "original_sha256": "fa0455915bdb6034b7d2729179db5d1f31cca335db28332ff458e2c6eac1a9b7",
+      "published_sha256": "fa0455915bdb6034b7d2729179db5d1f31cca335db28332ff458e2c6eac1a9b7",
+      "bytes": 1390841,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/reference/graph_model_model_first_200k.csv.completed.txt",
+      "role": "200,000 sources whose four queries completed",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC-DATA",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/graph_model_model_first_200k.csv.completed.txt",
+      "original_sha256": "de0df81d8d206de89f6685daf59fdf566fdb1a776323ceb3a8f4472c3e34da26",
+      "published_sha256": "de0df81d8d206de89f6685daf59fdf566fdb1a776323ceb3a8f4472c3e34da26",
+      "bytes": 7211200,
+      "verbatim": true,
+      "redactions": []
+    },
+    {
+      "path": "hub_agreement/historical_first200k/reference/graph_model_model_first_200k.csv.errors.csv",
+      "role": "Crawl error log (header only, 0 failures)",
+      "artifact": "tab:hub_agreement",
+      "eligibility": "PUBLIC",
+      "graph_server_source": "<REDACTED_HOME>/Graph_Lab/research_projects/mxr_project_01_debug/working/2026_Fall_Extension/models/graph_model_model_first_200k.csv.errors.csv",
+      "original_sha256": "ec857794c2e969dbfcfa79f09e678a338e82e4d96f5ffab61948da08490af0f2",
+      "published_sha256": "ec857794c2e969dbfcfa79f09e678a338e82e4d96f5ffab61948da08490af0f2",
+      "bytes": 29,
+      "verbatim": true,
+      "redactions": []
+    }
+  ]
+}

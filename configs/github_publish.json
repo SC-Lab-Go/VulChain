@@ -1,0 +1,13 @@
+{
+  "_comment": "Automatic GitHub publication settings. Publication stays OFF until 'enabled' is true and every field is filled in after approval. The cutoff below can only move earlier than the hard-coded 2026-11-11T22:00:00Z.",
+  "GITHUB_PUBLISH_CUTOFF_UTC": "2026-11-11T22:00:00Z",
+  "enabled": false,
+  "clone_dir": "",
+  "remote": "origin",
+  "branch": "main",
+  "approved_files": "configs/github_approved_files.txt",
+  "results_dir": "results",
+  "min_window_minutes": 15,
+  "tag_approved": false,
+  "tag": ""
+}
