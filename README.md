@@ -165,15 +165,7 @@ Each entry point does three things:
 - compares every printed cell with the manuscript's value;
 - writes a verification report under `outputs/`.
 
-The active manuscript has nine artifacts: eight tables and one figure. For
-each one, the table below answers six questions, in this column order:
-
-1. **Code:** is the source code available?
-2. **Inputs:** are the required inputs available?
-3. **Calc.:** were the original calculations reproduced?
-4. **Verified:** were the manuscript values verified?
-5. **Public:** is public reproduction possible?
-6. **Restr.:** is restricted input required?
+The active manuscript has nine artifacts: eight tables and one figure. 
 
 ## Data use
 
