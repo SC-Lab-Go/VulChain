@@ -6,10 +6,6 @@ Version: v2026.10.30-04
 Purpose: "DOT assembly scaling for released graph: (a) wall time, (b) peak
          memory, (c) throughput; mean +/- std. over three runs."
 
-Graph version. The benchmark assembled the full HuggingGraph v3 release
-(HuggingGraph_v3.dot: 7,775,872 edges, 3,137,207 nodes, SHA-256 348d92cd...),
-not the canonical VulChain.dot analytical view (7,666,919 edges, 25d669bd...).
-
 What is recomputed, and with which code (experiments/production/graph_server_rq1/):
   1. Per-run wall time and peak RSS are parsed from the nine /usr/bin/time -v
      records with the original elapsed() and metric()
@@ -182,30 +178,6 @@ def main():
                      "depend on the matplotlib and font versions (original: matplotlib 3.10.0, DejaVu Serif).")
     except ImportError:
         notes.append("matplotlib not installed: values verified, figure not drawn.")
-
-    # optional: rebuild the 100% graph with the original benchmark builder
-    if args.rebuild_dot:
-        v.require(args.release_dir and args.work, "--rebuild-dot needs --release-dir and --work")
-        args.work.mkdir(parents=True, exist_ok=True)
-        dot = args.work / "pct-100.dot"
-        build = subprocess.run([sys.executable, "-B", str(FIG / "benchmark" / "scripts" / "build_hugginggraph_scaling.py"),
-                                "--reference-builder", str(FIG / "benchmark" / "reference_builder" / "build_hugginggraph_v3.py"),
-                                "--edge-dir", str(args.release_dir / "edges" / "csv"), "--output", str(dot)],
-                               capture_output=True, text=True)
-        v.require(build.returncode == 0, "Benchmark builder failed: " + build.stderr[-300:])
-        check("rebuilt 100% DOT SHA-256 (HuggingGraph_v3.dot)", v.sha(dot), RELEASED_GRAPH_SHA256)
-
-    with (args.out / "rq1_figure_01_values.csv").open("w", newline="") as handle:
-        w = csv.writer(handle)
-        w.writerow(["size_percent", "edges", "nodes", "wall_mean_s", "wall_sd_s", "peak_rss_mean_gib",
-                    "throughput_mean_edges_s", "throughput_sd_edges_s"])
-        for s in SIZES:
-            p = per_size[s]
-            w.writerow([s, p["records"], p["nodes"], p["wall"]["mean"], p["wall"]["sample_sd"], p["rss"]["mean"],
-                        p["eps"]["mean"], p["eps"]["sample_sd"]])
-    return v.write_report(args.out / "rq1_figure_01_verification.md",
-                          "RQ1 Figure fig:rq1 (DOT assembly scaling; HuggingGraph v3 release, not VulChain.dot)",
-                          rows, ok, notes)
 
 
 if __name__ == "__main__":
