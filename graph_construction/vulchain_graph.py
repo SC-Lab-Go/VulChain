@@ -3,9 +3,6 @@
 
 Created: 2026-10-30
 Version: v2026.10.30-01
-Purpose: Single-file distribution of the October 2, 2026 HuggingGraph v3
-         construction pipeline that produced graph/VulChain.dot
-         (byte-identical to HuggingGraph_v3.dot).
 
 Each stage below is one original pipeline script, embedded verbatim and
 executed exactly as `python <script>.py ...` would run it. Cross-script
@@ -26,7 +23,6 @@ Stages that use script-relative default paths (model-lineage,
 dataset-dataset-baseline, dataset-attributes, audit-datasets) treat
 --workdir as the original script directory.
 
-Source: SC-Lab-Go/HuggingGraph source/ (release v2026.10.02-07).
 """
 
 import argparse
